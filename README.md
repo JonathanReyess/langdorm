@@ -9,13 +9,13 @@ To get started with the LangDorm website locally, follow these steps:
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/langdorm-website.git
+git clone git@github.com:JonathanReyess/langdorm.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd langdorm-website
+cd langdorm
 ```
 
 3. Install dependencies:
@@ -54,5 +54,3 @@ Licensed under the MIT License, Copyright © 2024
 
 See [LICENSE](LICENSE) for more information.
 ```
-
-Please replace `"your-username"` with your actual GitHub username in the clone command.
