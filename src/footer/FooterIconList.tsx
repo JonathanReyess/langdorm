@@ -15,24 +15,24 @@ const FooterIconList = (props: IFooterIconListProps) => (
     {/* Styling for the footer icon list */}
     <style jsx>
       {`
-        // Styling anchor tags within the footer icon list (except the last one)
+
         .footer-icon-list :global(a:not(:last-child)) {
-          @apply mr-3; // Applying right margin to create spacing between icons
+          @apply mr-3; 
         }
 
-        // Styling anchor tags within the footer icon list
+
         .footer-icon-list :global(a) {
-          @apply text-gray-500; // Applying gray text color to icons
+          @apply text-gray-500; 
         }
 
-        // Styling anchor tags on hover within the footer icon list
+
         .footer-icon-list :global(a:hover) {
-          @apply text-gray-700; // Applying darker gray text color on hover
+          @apply text-gray-700; 
         }
 
-        // Styling SVG icons within the footer icon list
+
         .footer-icon-list :global(svg) {
-          @apply fill-current w-5 h-5; // Applying current fill color and size to SVG icons
+          @apply fill-current w-5 h-5; 
         }
       `}
     </style>

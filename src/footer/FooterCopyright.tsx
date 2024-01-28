@@ -13,14 +13,14 @@ const FooterCopyright = () => (
     {/* Styling for the footer link */}
     <style jsx>
       {`
-        // Styling the anchor tag within the footer
+        
         .footer-copyright :global(a) {
-          @apply text-primary-500; // Applying primary text color
+          @apply text-primary-500; 
         }
 
-        // Styling the anchor tag on hover within the footer
+      
         .footer-copyright :global(a:hover) {
-          @apply underline; // Applying underline on hover
+          @apply underline; 
         }
       `}
     </style>
