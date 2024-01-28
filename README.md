@@ -1,4 +1,3 @@
-```markdown
 # LangDorm Website
 
 Welcome to the LangDorm website repository! LangDorm is a Living Learning Community at Duke University. This project is built using Next.js.
