@@ -20,6 +20,15 @@ const Hero = () => (
         <li>
           <Link href="">Home</Link> {/* Link to the home page */}
         </li>
+        <li>
+          <Link href="">About</Link> {/* Link to the about page */}
+        </li>
+        <li>
+          <Link href="">Members</Link> {/* Link to the Members page */}
+        </li>
+        <li>
+          <Link href="">Events</Link> {/* Link to the Members page */}
+        </li>
         {/* Additional navigation links rendered similarly */}
       </NavbarTwoColumns>
     </Section>
@@ -41,7 +50,7 @@ const Hero = () => (
         description="Living Learning Community @ Duke University" // Description text
         button={ // Call-to-action button wrapped in a div with margin top applied
           <div className="flex justify-center mt-5"> {/* Apply top margin (padding) here */}
-            <Link href="https://creativedesignsguru.com/category/nextjs/">
+            <Link href="">
               <Button xl >Rush Spring 2024</Button> {/* Button with link */}
             </Link>
           </div>
