@@ -15,6 +15,7 @@ const Footer = () => (
     <Section>
       {/* Rendering a CenteredFooter component with logo, icon list, and navigation links */}
       <CenteredFooter
+        id='dashboard'
         logo={<Logo />} // Logo component as the logo for the footer
         iconList={ // Icon list containing social media icons, each wrapped in a Link component
           <>

@@ -7,6 +7,7 @@ import { FooterIconList } from './FooterIconList';
 
 // Defining a type for the props expected by the CenteredFooter component
 type ICenteredFooterProps = {
+  id?: string; // An optional string representing the ID of the section
   logo: ReactNode; // ReactNode type represents the type of children elements that can be rendered within a React component
   iconList: ReactNode; // ReactNode type represents the type of children elements that can be rendered within a React component
   children: ReactNode; // ReactNode type represents the type of children elements that can be rendered within a React component

@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 
 // Defining a type for the props expected by the Section component
 type ISectionProps = {
+  id?: string; // An optional string representing the ID of the section
   title?: string; // An optional string representing the title of the section
   description?: string; // An optional string representing the description of the section
   yPadding?: string; // An optional string representing the vertical padding of the section

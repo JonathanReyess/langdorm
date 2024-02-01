@@ -21,10 +21,10 @@ const Hero = () => (
           <Link href="">Home</Link> {/* Link to the home page */}
         </li>
         <li>
-          <Link href="/members">About</Link> {/* Link to the about page */}
+        <Link href="#dashboard" scroll={false}>About</Link> {/* Link to the about page */}
         </li>
         <li>
-          <Link href="">Members</Link> {/* Link to the Members page */}
+          <Link href="/members">Members</Link> {/* Link to the Members page */}
         </li>
         <li>
           <Link href="">Events</Link> {/* Link to the Members page */}

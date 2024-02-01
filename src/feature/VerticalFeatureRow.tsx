@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 
 // Defining a type for the props expected by the VerticalFeatureRow component
 type IVerticalFeatureRowProps = {
+  id?: string; // An optional string representing the ID of the section
   title: string; // A string representing the title of the vertical feature row
   description: string; // A string representing the description of the vertical feature row
   image: string; // A string representing the URL of the image for the vertical feature row
