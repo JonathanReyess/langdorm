@@ -13,7 +13,7 @@ const Banner = () => (
   <Section>
     {/* Rendering a CTABanner component with title, subtitle, and button */}
     <CTABanner
-      title="Interesting in joining?" // Title for the banner
+      title="Interested in joining?" // Title for the banner
       subtitle="Follow us on Instagram and be on the lookout for more information!" // Subtitle for the banner
       button={ // Button for the banner, wrapped in a Link component
         <Link href="">

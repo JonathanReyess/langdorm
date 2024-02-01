@@ -21,7 +21,7 @@ const Hero = () => (
           <Link href="">Home</Link> {/* Link to the home page */}
         </li>
         <li>
-          <Link href="">About</Link> {/* Link to the about page */}
+          <Link href="/members">About</Link> {/* Link to the about page */}
         </li>
         <li>
           <Link href="">Members</Link> {/* Link to the Members page */}
