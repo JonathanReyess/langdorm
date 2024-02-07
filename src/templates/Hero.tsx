@@ -40,10 +40,10 @@ const Hero = () => (
         title={ // Custom title with an image wrapped in a div
           <div className="flex justify-center items-center">
             <img
-              src="assets/langdorm-logo.png" // Image source
+              src="assets/langdorm-logo-variant.png" // Image source
               alt="LangDorm Logo" // Alternative text for accessibility
               className="object-none" // CSS class for image styling
-              style={{ height: "410px", width: "1080px", marginLeft: "40px" }} // Inline style for image dimensions
+              style={{ height: "410px", width: "1080px", marginLeft: "0px", marginRight: "17px" }} // Inline style for image dimensions
             />
           </div>
         }
