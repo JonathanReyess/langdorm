@@ -22,4 +22,9 @@ color: #f5d0fe; /* Color for About link on hover */
 color: #f5d0fe; /* Color for Events link on hover */
 }
 
-  
+.dx-scheduler-appointment {
+  background-color: yellow !important; /* Change to your desired color */
+  color: black !important; /* Change text color if needed */
+}
+
+

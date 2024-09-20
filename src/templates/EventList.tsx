@@ -25,7 +25,7 @@ const ButtonContainer = styled.div`
 const ToggleButton = styled.button`
   padding: 10px 20px;
   border: none;
-  background-color: #d8b4fe;
+  background-color: #c4b5fd;
   color: white;
   border-radius: 5px;
   cursor: pointer;

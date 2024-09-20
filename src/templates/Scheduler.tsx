@@ -8,23 +8,39 @@ import {
   Toolbar,
   DateNavigator,
   ViewSwitcher,
+  AppointmentProps,
 } from '@devexpress/dx-react-scheduler-material-ui';
-import { ViewState } from '@devexpress/dx-react-scheduler'; // Ensure correct import
-import { events as eventData, Event } from '../templates/eventsData'; // Adjust import path as needed
+import { ViewState } from '@devexpress/dx-react-scheduler';
+import { events as eventData, Event } from '../templates/eventsData';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+// Create a custom appointment component with proper typing
+const Appointment: React.FC<AppointmentProps> = ({
+  children, style, ...restProps
+}) => (
+  <Appointments.Appointment
+    {...restProps}
+    style={{
+      ...style,
+      backgroundColor: '#c4b5fd',
+      borderRadius: '8px',
+    }}
+  >
+    {children}
+  </Appointments.Appointment>
+);
 
 const theme = createTheme({
   palette: {
     primary: {
       light: '#757ce8',
-      main: '#3f50b5',
+      main: '#c4b5fd',
       dark: '#002884',
       contrastText: '#fff',
     },
     secondary: {
       light: '#ff7961',
-      main: '#f44336',
+      main: '#c4b5fd',
       dark: '#ba000d',
       contrastText: '#000',
     },
@@ -36,27 +52,27 @@ const toISOString = (date?: Date) => date ? date.toISOString() : '';
 const mapEventsToSchedulerData = (events: Event[]) => {
   return events.map(event => ({
     title: event.name,
-    startDate:  toISOString(event.startDate),
-    endDate:  toISOString(event.endDate),
+    startDate: toISOString(event.startDate),
+    endDate: toISOString(event.endDate),
   }));
 };
 
 const EventScheduler: React.FC = () => {
   const [currentDate, setCurrentDate] = useState<Date>(new Date());
-
   const schedulerData = mapEventsToSchedulerData(eventData);
 
   return (
     <ThemeProvider theme={theme}>
       <Paper>
-        <Scheduler data={schedulerData}>
+        <Scheduler data={schedulerData} >
           <ViewState currentDate={currentDate} onCurrentDateChange={(newDate) => setCurrentDate(newDate)} />
           <MonthView />
-          <WeekView />
+          <WeekView startDayHour={9} endDayHour={19} />
           <Toolbar />
           <DateNavigator />
           <ViewSwitcher />
-          <Appointments />
+          {/* Use the custom appointment component */}
+          <Appointments appointmentComponent={Appointment}/>
         </Scheduler>
       </Paper>
     </ThemeProvider>
