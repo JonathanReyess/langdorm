@@ -22,7 +22,7 @@ const Logo = (props: ILogoProps) => {
 
   // Rendering logo image and site name wrapped in a span element
   return (
-    <span className={`inline-flex items-center text-black ${fontStyle}`}>
+    <span className={`inline-flex items-center text-gray-800 ${fontStyle}`}>
       {/* Rendering Image component with custom logo */}
       <Image
         src={myLogo} // Specify custom logo image source

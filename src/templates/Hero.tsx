@@ -7,6 +7,7 @@ import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
+import DropdownMenu from '../navigation/DropdownMenu';
 
 // Defining the Hero component, which renders a hero section with navigation and a call-to-action button
 const Hero = () => (
@@ -16,19 +17,16 @@ const Hero = () => (
     <Section yPadding="py-6">
       {/* Rendering a NavbarTwoColumns component with a logo and navigation links */}
       <NavbarTwoColumns logo={<Logo xl />}>
-        {/* Navigation links for the hero section */}
+      {/* Navigation links for the hero section */}
         <li>
-          <Link href="">Home</Link> {/* Link to the home page */}
+          <Link href="#about" className="nav-link about-link">About</Link> {/* Link to the about page */}
         </li>
         <li>
-        <Link href="#dashboard" scroll={false}>About</Link> {/* Link to the about page */}
+          <DropdownMenu/>
         </li>
         <li>
-          <Link href="/members">Members</Link> {/* Link to the Members page */}
-        </li>
-        <li>
-          <Link href="">Events</Link> {/* Link to the Members page */}
-        </li>
+          <Link href="/events" className="nav-link events-link">Events</Link> {/* Link to the Members page */}
+        </li> 
         {/* Additional navigation links rendered similarly */}
       </NavbarTwoColumns>
     </Section>

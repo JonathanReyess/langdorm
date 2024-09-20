@@ -14,6 +14,11 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      width: {
+        'custom-512': '512px', // Define a custom width
+        'custom-800': '800px', // Another example of a custom width
+        'custom-1200': '1200px',
+      },
       colors: {
         primary: {
           100: '#f5d0fe',

@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 // Define the type for the props expected by the CTABanner component
 type ICTABannerProps = {
   title: string; // Title for the call-to-action banner
-  subtitle: string; // Subtitle or additional information for the call-to-action banner
+  subtitle?: string; // Subtitle or additional information for the call-to-action banner
   button: ReactNode; // ReactNode for the button component to be included in the banner
 };
 
@@ -21,7 +21,7 @@ const CTABanner = (props: ICTABannerProps) => (
 
     {/* Div for the button section */}
     {/* Apply styles for whitespace handling and margin on small screens */}
-    <div className="bg-white text-white px-3 py-3 rounded-md">
+    <div className="bg-white text-white px-0 py-0 rounded-md">
       {props.button} {/* Render the button component */}
     </div>
   </div>

@@ -10,11 +10,11 @@ import { Section } from '../layout/Section';
 // Defining the Banner component, which renders a section with a call-to-action banner
 const Banner = () => (
   // Rendering a Section component to contain the banner content
-  <Section>
+  <Section id="">
     {/* Rendering a CTABanner component with title, subtitle, and button */}
     <CTABanner
-      title="Interested in joining?" // Title for the banner
-      subtitle="Follow us on Instagram and be on the lookout for more information!" // Subtitle for the banner
+      title="Follow us on Instagram and be on the lookout for more information!" // Title for the banner
+      //subtitle="Follow us on Instagram and be on the lookout for more information!" // Subtitle for the banner
       button={ // Button for the banner, wrapped in a Link component
         <Link href="">
           <Button>Join</Button> {/* Button text */}

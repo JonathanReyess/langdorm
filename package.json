@@ -14,12 +14,26 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@devexpress/dx-react-core": "^4.0.9",
+    "@devexpress/dx-react-scheduler": "^4.0.9",
+    "@devexpress/dx-react-scheduler-material-ui": "^4.0.9",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@headlessui/react": "^2.1.6",
+    "@heroicons/react": "^2.1.5",
+    "@mui/icons-material": "^5.14.14",
+    "@mui/material": "^5.14.14",
+    "@types/react-calendar": "^4.1.0",
+    "@types/styled-components": "^5.1.34",
     "classnames": "^2.5.1",
     "dotenv": "^16.4.1",
+    "framer-motion": "^11.5.4",
     "next": "^14.1.0",
     "next-seo": "^6.4.0",
     "react": "^18.2.0",
+    "react-calendar": "^5.0.0",
     "react-dom": "^18.2.0",
+    "styled-components": "^6.1.13",
     "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {

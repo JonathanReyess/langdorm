@@ -9,6 +9,7 @@ const VerticalFeatures = () => (
   <Section
       title="Who are we?" // Title for the section
       description="We're a diverse community of over 60 members encompassing speakers of Arabic, Chinese, French, German, Hindi, Italian, Japanese, Korean, Spanish, and many more languages." // Description for the section
+      id="about"
     >
      {/* Center the image using Tailwind CSS classes */}
      <div className="flex justify-center">
