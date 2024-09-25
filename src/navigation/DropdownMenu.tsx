@@ -14,7 +14,7 @@ const DropdownMenu: React.FC = () => (
       <Menu.Button
         as="div" // Use `div` to make the button act as text instead of a button
         className="inline-flex w-full justify-center text-xl font-medium
-         text-gray-800 hover:text-primary-100 cursor-pointer focus:outline-none 
+         text-gray-800 hover:text-primary-500 cursor-pointer focus:outline-none 
          focus-visible:ring-2 focus-visible:ring-black/75">
         Members
         {/* ChevronDownIcon indicates that the menu can be expanded, removed from below: <ChevronDownIcon className="ml-2 h-5 w-5 text-black" aria-hidden="true" /> */} 
@@ -31,7 +31,7 @@ const DropdownMenu: React.FC = () => (
       leaveTo="transform opacity-0 scale-95" // Final styles after leaving
     >
       {/* Menu.Items is the container for the dropdown menu items */}
-      <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
+      <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none" style={{ zIndex: 1 }}>
         <div className="px-1 py-1">
           {/* Menu.Item represents each item in the dropdown menu */}
           <Menu.Item>
@@ -39,7 +39,7 @@ const DropdownMenu: React.FC = () => (
               <Link href="/2023" passHref>
                 <div
                   className={`${
-                    active ? 'bg-primary-100 text-white' : 'text-black'
+                    active ? 'bg-primary-500 text-white' : 'text-black'
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm cursor-pointer`}
                 >
                   2023
@@ -52,7 +52,7 @@ const DropdownMenu: React.FC = () => (
               <Link href="/2024" passHref>
                 <div
                   className={`${
-                    active ? 'bg-primary-100 text-white' : 'text-black'
+                    active ? 'bg-primary-500 text-white' : 'text-black'
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm cursor-pointer`}
                 >
                   2024
@@ -65,7 +65,7 @@ const DropdownMenu: React.FC = () => (
               <Link href="/2025" passHref>
                 <div
                   className={`${
-                    active ? 'bg-primary-100 text-white' : 'text-black'
+                    active ? 'bg-primary-500 text-white' : 'text-black'
                   } group flex w-full items-center rounded-md px-2 py-2 text-sm cursor-pointer`}
                 >
                   2025

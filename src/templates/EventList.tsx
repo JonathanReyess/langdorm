@@ -19,7 +19,7 @@ const ListContainer = styled.div`
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center; /* Center button horizontally */
-  margin: 20px 0; /* Add some vertical margin */
+  margin: 50px 0; /* Add some vertical margin */
 `;
 
 const ToggleButton = styled.button`
@@ -29,7 +29,15 @@ const ToggleButton = styled.button`
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+
+  &:hover {
+    background-color: #a68cfc; /* Darker shade on hover */
+    transform: scale(1.1); /* Slightly enlarge button */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
 `;
+
 
 const EventsList: React.FC = () => {
   const [showPast, setShowPast] = useState(false);

@@ -1,51 +1,78 @@
-// Importing className function from 'classnames' package
+import React, { useState, useEffect } from 'react';
 import className from 'classnames';
-// Importing useRouter hook from 'next/router' package
 import { useRouter } from 'next/router';
 
-// Defining a type for the props expected by the VerticalFeatureRow component
+interface Image {
+  src: string;
+  alt: string;
+  caption: string;
+  width?: string;
+  height?: string;
+}
+
 type IVerticalFeatureRowProps = {
-  id?: string; // An optional string representing the ID of the section
-  title: string; // A string representing the title of the vertical feature row
-  description: string; // A string representing the description of the vertical feature row
-  image: string; // A string representing the URL of the image for the vertical feature row
-  imageAlt: string; // A string representing the alt text for the image
-  reverse?: boolean; // An optional boolean indicating whether the layout should be reversed
+  id?: string;
+  title: string;
+  description: string;
+  images: Image[] | Image;
+  reverse?: boolean;
 };
 
-// Defining the VerticalFeatureRow component, which takes props of type IVerticalFeatureRowProps
-const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
-  // Generating class names for the vertical feature row based on props
+const VerticalFeatureRow: React.FC<IVerticalFeatureRowProps> = (props) => {
+  const router = useRouter();
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  const images: Image[] = Array.isArray(props.images)
+    ? props.images
+    : [props.images];
+
+  useEffect(() => {
+    if (images.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 5000);
+
+      return () => clearInterval(interval);
+    }
+  }, [images.length]);
+
   const verticalFeatureClass = className(
-    'mt-20', // Margin top
-    'flex', // Flex display
-    'flex-wrap', // Wrap items within flex container
-    'items-center', // Align items along the center vertically
+    'mt-20',
+    'flex',
+    'flex-wrap',
+    'items-center',
     {
-      'flex-row-reverse': props.reverse, // Reverse the order of flex items if 'reverse' prop is true
-    },
+      'flex-row-reverse': props.reverse,
+    }
   );
 
-  // Getting the router object using the useRouter hook
-  const router = useRouter();
-
-  // Returning JSX for the VerticalFeatureRow component
   return (
     <div className={verticalFeatureClass}>
-      {/* Left column containing title and description */}
       <div className="w-full text-center sm:w-1/2 sm:px-6">
-        <h3 className="text-3xl font-semibold text-gray-900">{props.title}</h3> {/* Title */}
-        <div className="mt-6 text-xl leading-9">{props.description}</div> {/* Description */}
+        <h3 className="text-3xl font-semibold text-primary-500">{props.title}</h3>
+        <div className="mt-6 text-xl leading-9">{props.description}</div>
       </div>
 
-      {/* Right column containing the image */}
-      <div className="w-full p-6 sm:w-1/2">
-        {/* Image element with src and alt attributes */}
-        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
+      <div className="w-full p-6 sm:w-1/2 flex flex-col items-center">
+        {images.length > 0 && (
+          <>
+            <img
+              src={`${router.basePath}${images[currentIndex].src}`}
+              alt={images[currentIndex].alt || 'Image'}
+              style={{
+                width: images[currentIndex].width ? `${images[currentIndex].width}px` : 'auto',
+                height: images[currentIndex].height ? `${images[currentIndex].height}px` : 'auto',
+              }}
+            />
+            {images[currentIndex].caption && (
+              <p className="text-center mt-2">{images[currentIndex].caption}</p>
+            )}
+          </>
+        )}
+        {images.length === 0 && <p>No images available</p>}
       </div>
     </div>
   );
 };
 
-// Exporting the VerticalFeatureRow component for use in other parts of the application
 export { VerticalFeatureRow };

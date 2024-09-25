@@ -23,7 +23,8 @@ const Button = (props: IButtonProps) => {
       <style jsx>
         {`
           .btn {
-            @apply inline-block rounded-md text-center; 
+            @apply inline-block rounded-md text-center transition-transform duration-300 ease-in-out; /* Added transition */
+            cursor: pointer; /* Ensure pointer on hover */
           }
 
           .btn-base {
@@ -39,7 +40,9 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary:hover {
-            @apply bg-primary-200; 
+            @apply bg-primary-500; 
+            transform: scale(1.1); /* Scale on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
           }
         `}
       </style>

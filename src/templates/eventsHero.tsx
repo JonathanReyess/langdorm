@@ -30,14 +30,23 @@ const EventHero = () => (
     </Section>
 
     {/* Rendering another Section component with customized vertical padding */}
-    <Section yPadding="pt-0 pb-20"> {/* Adjust the top padding here */}
-      {/* Container for large text and image */}
-      <div className="text-center mb-8"> {/* Center-aligns text and adds margin-bottom */}
-        {/* Large text */}
-        <h1 className="text-4xl mb-4 text-gray-800">Events</h1>
-      </div>
-      {/* Rendering the image */}
-    </Section>
+    <Section yPadding="pt-0 pb-0">
+  {/* Container for large image */}
+  <div className="overflow-hidden text-center mb-0">
+  <img
+    src="/assets/events-4.png"
+    alt="Events"
+    className="transition-transform duration-300 ease-in-out transform hover:scale-110 mx-auto" // Add transition and hover effect
+    style={{ width: "200px", height: "200px" }} // Adjust the width and height as needed
+  />
+</div>
+
+</Section>
+
+{/* Following content with negative margin */}
+
+
+
   </Background>
 );
 

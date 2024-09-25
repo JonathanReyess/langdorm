@@ -38,7 +38,7 @@ const MemberHero = () => (
       </div>
       {/* Rendering the image */}
       <div className="flex justify-center items-center">
-      <div className="w-custom-1200 h-96 relative"> {/* Full width and fixed height */}
+      <div className="w-custom-1200 h-96 relative" style={{ zIndex: 0 }}> {/* Full width and fixed height */}
   <img
     src="/assets/ld_2022.png" // Image source
     alt="LangDorm Logo" // Alternative text for accessibility
