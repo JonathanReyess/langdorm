@@ -30,11 +30,11 @@ const NavbarTwoColumns = (props: INavbarProps) => (
     <style jsx>
       {`
         .navbar :global(li:not(:first-child)) {
-          @apply mt-0; 
+          @apply mt-0;
         }
 
         .navbar :global(li:not(:last-child)) {
-          @apply mr-5; 
+          @apply mr-5;
         }
       `}
     </style>

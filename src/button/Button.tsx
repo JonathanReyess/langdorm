@@ -16,9 +16,10 @@ const Button = (props: IButtonProps) => {
   });
 
   return (
-    <div className={btnClass}> {/* Render the button with computed classes */}
+    <div className={btnClass}>
+      {' '}
+      {/* Render the button with computed classes */}
       {props.children} {/* Render the content inside the button */}
-
       {/* Inline styles for button styling */}
       <style jsx>
         {`
@@ -28,11 +29,11 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-base {
-            @apply text-lg font-semibold py-2 px-4; 
+            @apply text-lg font-semibold py-2 px-4;
           }
 
           .btn-xl {
-            @apply font-extrabold text-xl py-4 px-6; 
+            @apply font-extrabold text-xl py-4 px-6;
           }
 
           .btn-primary {
@@ -40,7 +41,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary:hover {
-            @apply bg-primary-500; 
+            @apply bg-primary-500;
             transform: scale(1.1); /* Scale on hover */
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
           }

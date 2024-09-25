@@ -15,7 +15,8 @@ const Banner = () => (
     <CTABanner
       title="Follow us on Instagram @dukelangdorm and be on the lookout for more information!" // Title for the banner
       // subtitle="Follow us on Instagram and be on the lookout for more information!" // Subtitle for the banner
-      button={ // Button for the banner, wrapped in a Link component
+      button={
+        // Button for the banner, wrapped in a Link component
         <Link href="">
           <Button>Join</Button> {/* Button text */}
         </Link>
@@ -23,7 +24,6 @@ const Banner = () => (
     />
   </Section>
 );
-
 
 // Exporting the Banner component for use in other parts of the application
 export { Banner };

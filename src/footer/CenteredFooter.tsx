@@ -18,7 +18,6 @@ const CenteredFooter = (props: ICenteredFooterProps) => (
   // Rendering a div element with the "text-center" class
   <div className="text-center">
     {props.logo} {/* Rendering the logo passed as a prop */}
-    
     {/* Rendering a navigation element */}
     <nav>
       {/* Rendering an unordered list with classes for styling */}
@@ -26,22 +25,19 @@ const CenteredFooter = (props: ICenteredFooterProps) => (
         {props.children} {/* Rendering children elements passed as props */}
       </ul>
     </nav>
-
     {/* Rendering FooterIconList component with iconList prop */}
     <div className="mt-8 flex justify-center">
       <FooterIconList>{props.iconList}</FooterIconList>
     </div>
-
     {/* Rendering FooterCopyright component */}
     <div className="mt-8 text-sm">
       <FooterCopyright />
     </div>
-
     {/* Styling for the navbar list items */}
     <style jsx>
       {`
         .navbar :global(li) {
-          @apply mx-4; 
+          @apply mx-4;
         }
       `}
     </style>

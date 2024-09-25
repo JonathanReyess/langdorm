@@ -9,18 +9,15 @@ const FooterCopyright = () => (
     © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{' '}
     {/* Rendering a link to CreativeDesignsGuru */}
     <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>.
-
     {/* Styling for the footer link */}
     <style jsx>
       {`
-        
         .footer-copyright :global(a) {
-          @apply text-primary-500; 
+          @apply text-primary-500;
         }
 
-      
         .footer-copyright :global(a:hover) {
-          @apply underline; 
+          @apply underline;
         }
       `}
     </style>

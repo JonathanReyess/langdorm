@@ -7,7 +7,7 @@ export interface Event {
   image: string;
   isPast: boolean;
   startDate?: Date; // Optional for conversion
-  endDate?: Date;   // Optional for conversion
+  endDate?: Date; // Optional for conversion
 }
 
 // Function to check if an event date is in the past
@@ -29,5 +29,5 @@ export const events: Event[] = [
     isPast: isEventInPast(new Date('2024-09-15T09:00:00')),
     startDate: new Date('2024-09-15T09:00:00'),
     endDate: new Date('2024-09-15T10:00:00'),
-  }
+  },
 ];

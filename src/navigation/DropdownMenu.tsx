@@ -1,8 +1,8 @@
 // components/DropdownMenu.tsx
 import { Menu, Transition } from '@headlessui/react'; // Import Menu and Transition components from @headlessui/react for dropdown functionality and animations
-import { Fragment } from 'react'; // Import Fragment from React to wrap the Transition component
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'; // Import ChevronDownIcon for the dropdown indicator
 import Link from 'next/link'; // Import Link from Next.js for client-side navigation
+import { Fragment } from 'react'; // Import Fragment from React to wrap the Transition component
 
 // Define the DropdownMenu component as a functional component
 const DropdownMenu: React.FC = () => (
@@ -13,11 +13,12 @@ const DropdownMenu: React.FC = () => (
       {/* Menu.Button is used to create the clickable area that toggles the dropdown */}
       <Menu.Button
         as="div" // Use `div` to make the button act as text instead of a button
-        className="inline-flex w-full justify-center text-xl font-medium
-         text-gray-800 hover:text-primary-500 cursor-pointer focus:outline-none 
-         focus-visible:ring-2 focus-visible:ring-black/75">
+        className="inline-flex w-full cursor-pointer justify-center text-xl
+         font-medium text-gray-800 hover:text-primary-500 focus:outline-none 
+         focus-visible:ring-2 focus-visible:ring-black/75"
+      >
         Members
-        {/* ChevronDownIcon indicates that the menu can be expanded, removed from below: <ChevronDownIcon className="ml-2 h-5 w-5 text-black" aria-hidden="true" /> */} 
+        {/* ChevronDownIcon indicates that the menu can be expanded, removed from below: <ChevronDownIcon className="ml-2 h-5 w-5 text-black" aria-hidden="true" /> */}
       </Menu.Button>
     </div>
     {/* Transition component adds animations for dropdown appearance and disappearance */}
@@ -31,8 +32,11 @@ const DropdownMenu: React.FC = () => (
       leaveTo="transform opacity-0 scale-95" // Final styles after leaving
     >
       {/* Menu.Items is the container for the dropdown menu items */}
-      <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none" style={{ zIndex: 1 }}>
-        <div className="px-1 py-1">
+      <Menu.Items
+        className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none"
+        style={{ zIndex: 1 }}
+      >
+        <div className="p-1">
           {/* Menu.Item represents each item in the dropdown menu */}
           <Menu.Item>
             {({ active }) => (
@@ -40,7 +44,7 @@ const DropdownMenu: React.FC = () => (
                 <div
                   className={`${
                     active ? 'bg-primary-500 text-white' : 'text-black'
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm cursor-pointer`}
+                  } group flex w-full cursor-pointer items-center rounded-md p-2 text-sm`}
                 >
                   2023
                 </div>
@@ -53,7 +57,7 @@ const DropdownMenu: React.FC = () => (
                 <div
                   className={`${
                     active ? 'bg-primary-500 text-white' : 'text-black'
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm cursor-pointer`}
+                  } group flex w-full cursor-pointer items-center rounded-md p-2 text-sm`}
                 >
                   2024
                 </div>
@@ -66,7 +70,7 @@ const DropdownMenu: React.FC = () => (
                 <div
                   className={`${
                     active ? 'bg-primary-500 text-white' : 'text-black'
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm cursor-pointer`}
+                  } group flex w-full cursor-pointer items-center rounded-md p-2 text-sm`}
                 >
                   2025
                 </div>

@@ -1,10 +1,10 @@
 // Importing AppConfig from '../utils/AppConfig' to access site configuration
-import { AppConfig } from '../utils/AppConfig';
 // Importing Image component from 'next/image' for optimized image rendering
 import Image from 'next/image';
-
 // Importing custom logo image from 'public/assets/language-svgrepo.svg'
 import myLogo from 'public/assets/language-svgrepo.svg';
+
+import { AppConfig } from '../utils/AppConfig';
 
 // Defining props interface for Logo component
 type ILogoProps = {
@@ -30,7 +30,6 @@ const Logo = (props: ILogoProps) => {
         width={size} // Specify width of the logo
         height={size} // Specify height of the logo
       />
-
       {AppConfig.site_name} {/* Rendering site name */}
     </span>
   );

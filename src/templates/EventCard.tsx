@@ -1,7 +1,8 @@
 // components/EventCard.tsx
 import React from 'react';
 import styled from 'styled-components';
-import { Event } from './eventsData';
+
+import type { Event } from './eventsData';
 
 interface EventCardProps {
   event: Event; // Prop type for the EventCard component
@@ -41,7 +42,8 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => (
     <EventImage src={event.image} alt={event.name} />
     <EventInfo>
       <h3>{event.name}</h3>
-      <p>{new Date(event.date).toLocaleDateString()}</p> {/* Format date to a readable string */}
+      <p>{new Date(event.date).toLocaleDateString()}</p>{' '}
+      {/* Format date to a readable string */}
     </EventInfo>
   </Card>
 );

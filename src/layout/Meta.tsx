@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 // Importing NextSeo component from 'next-seo' package
 import { NextSeo } from 'next-seo';
+
 // Importing AppConfig from the '../utils/AppConfig' file
 import { AppConfig } from '../utils/AppConfig';
 

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import className from 'classnames';
 import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
 
 interface Image {
   src: string;
@@ -32,8 +32,11 @@ const VerticalFeatureRow: React.FC<IVerticalFeatureRowProps> = (props) => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       }, 5000);
 
-      return () => clearInterval(interval);
+      return () => clearInterval(interval); // Cleanup interval
     }
+
+    // Return a no-op function when there's no interval to clear
+    return () => {};
   }, [images.length]);
 
   const verticalFeatureClass = className(
@@ -43,29 +46,37 @@ const VerticalFeatureRow: React.FC<IVerticalFeatureRowProps> = (props) => {
     'items-center',
     {
       'flex-row-reverse': props.reverse,
-    }
+    },
   );
 
   return (
     <div className={verticalFeatureClass}>
       <div className="w-full text-center sm:w-1/2 sm:px-6">
-        <h3 className="text-3xl font-semibold text-primary-500">{props.title}</h3>
+        <h3 className="text-3xl font-semibold text-primary-500">
+          {props.title}
+        </h3>
         <div className="mt-6 text-xl leading-9">{props.description}</div>
       </div>
 
-      <div className="w-full p-6 sm:w-1/2 flex flex-col items-center">
-        {images.length > 0 && (
+      <div className="flex w-full flex-col items-center p-6 sm:w-1/2">
+        {images.length > 0 && images[currentIndex] && (
           <>
             <img
-              src={`${router.basePath}${images[currentIndex].src}`}
-              alt={images[currentIndex].alt || 'Image'}
+              src={`${router.basePath}${images[currentIndex]?.src}`}
+              alt={images[currentIndex]?.alt || 'Image'}
               style={{
-                width: images[currentIndex].width ? `${images[currentIndex].width}px` : 'auto',
-                height: images[currentIndex].height ? `${images[currentIndex].height}px` : 'auto',
+                width: images[currentIndex]?.width
+                  ? `${images[currentIndex]?.width}px`
+                  : 'auto',
+                height: images[currentIndex]?.height
+                  ? `${images[currentIndex]?.height}px`
+                  : 'auto',
               }}
             />
-            {images[currentIndex].caption && (
-              <p className="text-center mt-2">{images[currentIndex].caption}</p>
+            {images[currentIndex]?.caption && (
+              <p className="mt-2 text-center">
+                {images[currentIndex]?.caption}
+              </p>
             )}
           </>
         )}

@@ -11,28 +11,23 @@ const FooterIconList = (props: IFooterIconListProps) => (
   // Rendering a div element with the class "footer-icon-list" and flexbox styling
   <div className="footer-icon-list flex flex-wrap">
     {props.children} {/* Rendering children elements passed as props */}
-
     {/* Styling for the footer icon list */}
     <style jsx>
       {`
-
         .footer-icon-list :global(a:not(:last-child)) {
-          @apply mr-3; 
+          @apply mr-3;
         }
-
 
         .footer-icon-list :global(a) {
-          @apply text-gray-500; 
+          @apply text-gray-500;
         }
-
 
         .footer-icon-list :global(a:hover) {
-          @apply text-gray-700; 
+          @apply text-gray-700;
         }
 
-
         .footer-icon-list :global(svg) {
-          @apply fill-current w-5 h-5; 
+          @apply fill-current w-5 h-5;
         }
       `}
     </style>

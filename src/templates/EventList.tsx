@@ -1,8 +1,10 @@
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { events, Event } from '../templates/eventsData';
-import EventCard from '../templates/EventCard';
-import { motion } from 'framer-motion';
+
+import EventCard from './EventCard';
+import type { Event } from './eventsData';
+import { events } from './eventsData';
 
 const ListContainer = styled.div`
   display: flex;
@@ -29,7 +31,10 @@ const ToggleButton = styled.button`
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+  transition:
+    transform 0.3s,
+    background-color 0.3s,
+    box-shadow 0.3s; /* Smooth transition for effects */
 
   &:hover {
     background-color: #a68cfc; /* Darker shade on hover */
@@ -37,7 +42,6 @@ const ToggleButton = styled.button`
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
   }
 `;
-
 
 const EventsList: React.FC = () => {
   const [showPast, setShowPast] = useState(false);
