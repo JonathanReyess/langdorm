@@ -1,10 +1,10 @@
 import type { NextPage } from 'next';
 import React from 'react';
 
+import membersData from '../data/2025_members.json'; // Import the 2025 members JSON file
 // Importing components
 import { MemberHero } from '../templates/2025Hero';
 import { Footer } from '../templates/Footer';
-import membersData from '../data/2025_members.json'; // Import the 2025 members JSON file
 
 const AboutPage: NextPage = () => {
   // Extract executive members and class data from the imported JSON
@@ -12,13 +12,17 @@ const AboutPage: NextPage = () => {
 
   // Function to render individual member squares
   const renderMemberSquare = (member: any) => (
-    <div key={member.id} className="flex w-1/4 flex-col items-center p-4">
-      <div className="relative h-60 w-60">
-        {/* Set a fixed size for the image container */}
+    <div
+      key={member.id}
+      className="flex w-full flex-col items-center p-4 sm:w-1/2 md:w-1/4"
+    >
+      <div className="relative h-48 w-48 sm:h-60 sm:w-60">
+        {' '}
+        {/* Adjust sizes here */}
         <img
           src={member.imageUrl}
           alt={member.name}
-          className={`absolute inset-0 h-full w-full border-4 object-cover ${member.borderColor}`} // Use object-cover to fit images
+          className={`h-full w-full border-4 object-cover ${member.borderColor}`} // Use w-full and h-full to avoid distortion
         />
       </div>
       <div className="mt-2 text-center">

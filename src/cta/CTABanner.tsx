@@ -11,14 +11,21 @@ type ICTABannerProps = {
 const CTABanner = (props: ICTABannerProps) => (
   <div className="flex flex-col rounded-md bg-transparent p-4 text-center sm:flex-row sm:items-center sm:justify-between sm:p-8 sm:text-left">
     {/* Div for the title and subtitle section */}
-    <div className="ml-2 text-ellipsis whitespace-nowrap text-2xl font-bold">
-      <div className="text-primary-500">{props.title}</div>
-      <div className="text-white">{props.subtitle}</div>
+    <div className="flex flex-col items-center sm:items-start">
+      <div className="text-xl font-bold text-primary-500 sm:text-2xl">
+        {props.title}
+      </div>
+      {props.subtitle && (
+        <div className="text-sm text-white sm:text-lg">{props.subtitle}</div>
+      )}
     </div>
 
     {/* Div for the button section */}
-    <div className="rounded-md bg-white px-10 py-0 text-white">
-      {/* {props.button} {/* Render the button component */}
+    <div className="mt-4 sm:ml-4 sm:mt-0">
+      {/* Commented out the button component */}
+      {/* <div className="rounded-md bg-white px-8 py-2 text-black">
+        {props.button} 
+      </div> */}
     </div>
   </div>
 );

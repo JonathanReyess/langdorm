@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import EventCard from './EventCard';
 import type { Event } from '../data/eventsData';
 import { events } from '../data/eventsData';
+import EventCard from './EventCard';
 
 const ListContainer = styled.div`
   display: flex;

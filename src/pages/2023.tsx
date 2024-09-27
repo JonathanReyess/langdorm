@@ -1,8 +1,9 @@
-import { GetStaticProps, NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import React from 'react';
+
+import membersData from '../data/2023_members.json'; // Import the JSON file directly
 import { MemberHero } from '../templates/2023Hero';
 import { Footer } from '../templates/Footer';
-import membersData from '../data/2023_members.json'; // Import the JSON file directly
 
 // Props type for the component
 interface AboutPageProps {
@@ -12,15 +13,23 @@ interface AboutPageProps {
   };
 }
 
-const AboutPage: NextPage<AboutPageProps> = ({ executiveMembers, classesData }) => {
+const AboutPage: NextPage<AboutPageProps> = ({
+  executiveMembers,
+  classesData,
+}) => {
   // Function to render individual member squares
   const renderMemberSquare = (member: any) => (
-    <div key={member.id} className="flex w-1/4 flex-col items-center p-4">
-      <div className="relative h-60 w-60">
+    <div
+      key={member.id}
+      className="flex w-full flex-col items-center p-4 sm:w-1/2 md:w-1/4"
+    >
+      <div className="relative h-48 w-48 sm:h-60 sm:w-60">
+        {' '}
+        {/* Adjust sizes here */}
         <img
           src={member.imageUrl}
           alt={member.name}
-          className={`absolute inset-0 h-full w-full border-4 object-cover`} 
+          className={`h-full w-full object-cover`} // Changed class here
         />
       </div>
       <div className="mt-2 text-center">
