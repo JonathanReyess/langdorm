@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import type { Event } from './eventsData';
+import type { Event } from '../data/eventsData';
 
 interface EventCardProps {
   event: Event; // Prop type for the EventCard component

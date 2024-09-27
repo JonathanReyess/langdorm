@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import EventCard from './EventCard';
-import type { Event } from './eventsData';
-import { events } from './eventsData';
+import type { Event } from '../data/eventsData';
+import { events } from '../data/eventsData';
 
 const ListContainer = styled.div`
   display: flex;

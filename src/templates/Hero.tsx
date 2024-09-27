@@ -66,7 +66,7 @@ const Hero = () => (
           <div className="mt-5 flex justify-center">
             {' '}
             {/* Apply top margin (padding) here */}
-            <Link href="">
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdlV4Rj8l-y6vwXE4XFIW4fciFAE9maPR-Yy-LM-s518dCEXw/viewform">
               <Button xl>Rush Spring 2024</Button> {/* Button with link */}
             </Link>
           </div>
