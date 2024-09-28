@@ -24,7 +24,6 @@ const AboutPage: NextPage<AboutPageProps> = ({
       className="flex w-full flex-col items-center p-4 sm:w-1/2 md:w-1/4"
     >
       <div className="relative h-48 w-48 sm:h-60 sm:w-60">
-        {' '}
         {/* Adjust sizes here */}
         <img
           src={member.imageUrl}
@@ -34,9 +33,15 @@ const AboutPage: NextPage<AboutPageProps> = ({
       </div>
       <div className="mt-2 text-center">
         <h2 className="text-lg font-semibold">{member.name}</h2>
-        <p className="text-sm text-black">{member.major}</p>
-        <p className="text-sm text-black">{member.hometown}</p>
-        <p className="text-sm text-black">{member.languages}</p>
+        <p className="text-sm text-black">
+          <strong>Major:</strong> {member.major.replace('Major: ', '')}
+        </p>
+        <p className="text-sm text-black">
+          <strong>Hometown:</strong> {member.hometown.replace('Hometown: ', '')}
+        </p>
+        <p className="text-sm text-black">
+          <strong>Languages:</strong> {member.languages.replace('Languages: ', '')}
+        </p>
       </div>
     </div>
   );

@@ -13,11 +13,18 @@ const Banner = () => (
   <Section id="">
     {/* Rendering a CTABanner component with title, subtitle, and button */}
     <CTABanner
-      title="Follow us on Instagram @dukelangdorm and be on the lookout for more information!" // Title for the banner
-      // subtitle="Follow us on Instagram and be on the lookout for more information!" // Subtitle for the banner
+      title={
+        <>
+          Follow us on Instagram{' '}
+          <Link href="https://www.instagram.com/dukelangdorm" target="_blank" rel="noopener noreferrer">
+            @dukelangdorm
+          </Link>{' '}
+          and be on the lookout for more information!
+        </>
+      } // Title for the banner
       button={
         // Button for the banner, wrapped in a Link component
-        <Link href="">
+        <Link href="/join">
           <Button>Join</Button> {/* Button text */}
         </Link>
       }

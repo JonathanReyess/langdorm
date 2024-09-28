@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
 import React from 'react';
 
-import membersData from '../data/2025_members.json'; // Import the 2025 members JSON file
+import membersData from '../data/2025_members.json'; // Import the 2024 members JSON file
 // Importing components
 import { MemberHero } from '../templates/2025Hero';
 import { Footer } from '../templates/Footer';
 
-const AboutPage: NextPage = () => {
-  // Extract executive members and class data from the imported JSON
+const AboutPage: NextPage = () => {2
+  // Extract executive members and class data from imported JSON
   const { executiveMembers, classesData } = membersData;
 
   // Function to render individual member squares
@@ -17,19 +17,24 @@ const AboutPage: NextPage = () => {
       className="flex w-full flex-col items-center p-4 sm:w-1/2 md:w-1/4"
     >
       <div className="relative h-48 w-48 sm:h-60 sm:w-60">
-        {' '}
         {/* Adjust sizes here */}
         <img
           src={member.imageUrl}
           alt={member.name}
-          className={`h-full w-full border-4 object-cover ${member.borderColor}`} // Use w-full and h-full to avoid distortion
+          className={`h-full w-full border-4 object-cover ${member.borderColor}`} // Changed to w-full and h-full
         />
       </div>
       <div className="mt-2 text-center">
         <h2 className="text-lg font-semibold">{member.name}</h2>
-        <p className="text-sm text-black">{member.major}</p>
-        <p className="text-sm text-black">{member.hometown}</p>
-        <p className="text-sm text-black">{member.languages}</p>
+        <p className="text-sm text-black">
+          <strong>Major:</strong> {member.major.replace('Major: ', '')}
+        </p>
+        <p className="text-sm text-black">
+          <strong>Hometown:</strong> {member.hometown.replace('Hometown: ', '')}
+        </p>
+        <p className="text-sm text-black">
+          <strong>Languages:</strong> {member.languages.replace('Languages: ', '')}
+        </p>
       </div>
     </div>
   );
