@@ -13,27 +13,32 @@ export interface Event {
 }
 
 // Function to check if an event date is in the past
-export const isEventInPast = (eventDate: Date | string | undefined): boolean => {
+export const isEventInPast = (
+  eventDate: Date | string | undefined,
+): boolean => {
   // Check if eventDate is undefined or invalid
-  if (typeof eventDate === 'undefined' || (typeof eventDate === 'string' && eventDate.trim() === '')) {
+  if (
+    typeof eventDate === 'undefined' ||
+    (typeof eventDate === 'string' && eventDate.trim() === '')
+  ) {
     throw new Error('Invalid event date');
   }
 
   const date = new Date(eventDate);
-  if (isNaN(date.getTime())) {
+  if (Number.isNaN(date.getTime())) {
     throw new Error('Invalid event date');
   }
 
   const today = new Date();
   // Set today's time to 00:00:00 in EST for comparison
-  const todayAtMidnightEST = new Date(today.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+  const todayAtMidnightEST = new Date(
+    today.toLocaleString('en-US', { timeZone: 'America/New_York' }),
+  );
   todayAtMidnightEST.setHours(0, 0, 0, 0); // Set the time to midnight
 
   // Compare time values of both dates
   return date.getTime() < todayAtMidnightEST.getTime();
 };
-
-
 
 // Events array
 export const events: Event[] = [
@@ -60,4 +65,3 @@ export const events: Event[] = [
     description: 'CC Common Room',
   },
 ];
-

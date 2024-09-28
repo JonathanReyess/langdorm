@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+
 import type { Event } from '../data/eventsData';
 
 // Props for the EventCard component
@@ -24,7 +25,8 @@ const CardInner = styled.div<{ isFlipped: boolean }>`
   height: 100%;
   transition: transform 0.6s; /* Smooth flip transition */
   transform-style: preserve-3d; /* Preserve the 3D effect */
-  transform: ${({ isFlipped }) => (isFlipped ? 'rotateY(180deg)' : 'rotateY(0)')}; /* Flip */
+  transform: ${({ isFlipped }) =>
+    isFlipped ? 'rotateY(180deg)' : 'rotateY(0)'}; /* Flip */
 `;
 
 const CardFront = styled.div`
@@ -72,7 +74,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
   const [isFlipped, setIsFlipped] = useState(false); // State to track card flip
 
   const handleCardClick = () => {
-    setIsFlipped(prevState => !prevState); // Toggle flip state on click
+    setIsFlipped((prevState) => !prevState); // Toggle flip state on click
   };
 
   return (
@@ -85,24 +87,28 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
             <p>{new Date(event.date).toLocaleDateString()}</p>
             {event.startDate && event.endDate && (
               <p>
-                {event.startDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} -{' '}
-                {event.endDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                {event.startDate.toLocaleTimeString([], {
+                  hour: '2-digit',
+                  minute: '2-digit',
+                })}{' '}
+                -{' '}
+                {event.endDate.toLocaleTimeString([], {
+                  hour: '2-digit',
+                  minute: '2-digit',
+                })}
               </p>
             )}
-            {event.location && (
-              <p>{event.location}</p>
-            )}
+            {event.location && <p>{event.location}</p>}
           </EventInfo>
         </CardFront>
         <CardBack>
           <h3>{event.name}</h3>
-          <p>{event.description}</p> {/* Use event.description here for more details */}
+          <p>{event.description}</p>{' '}
+          {/* Use event.description here for more details */}
         </CardBack>
       </CardInner>
     </Card>
   );
-  
-  
 };
 
 export default EventCard;
