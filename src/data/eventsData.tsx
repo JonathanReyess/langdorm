@@ -8,35 +8,56 @@ export interface Event {
   isPast: boolean;
   startDate?: Date; // Optional for conversion
   endDate?: Date; // Optional for conversion
+  location?: string; // Optional location property
+  description?: string; // Optional description property
 }
 
 // Function to check if an event date is in the past
-export const isEventInPast = (eventDate: Date): boolean => {
+export const isEventInPast = (eventDate: Date | string | undefined): boolean => {
+  // Check if eventDate is undefined or invalid
+  if (typeof eventDate === 'undefined' || (typeof eventDate === 'string' && eventDate.trim() === '')) {
+    throw new Error('Invalid event date');
+  }
+
+  const date = new Date(eventDate);
+  if (isNaN(date.getTime())) {
+    throw new Error('Invalid event date');
+  }
+
   const today = new Date();
-  // Set today's time to 00:00:00 to compare only the date part
-  const todayAtMidnight = new Date(today.setHours(0, 0, 0, 0));
+  // Set today's time to 00:00:00 in EST for comparison
+  const todayAtMidnightEST = new Date(today.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+  todayAtMidnightEST.setHours(0, 0, 0, 0); // Set the time to midnight
+
   // Compare time values of both dates
-  return eventDate.getTime() < todayAtMidnight.getTime();
+  return date.getTime() < todayAtMidnightEST.getTime();
 };
+
+
 
 // Events array
 export const events: Event[] = [
   {
     id: '1',
-    name: 'Event A',
-    date: '2024-09-26',
-    image: '/people/person_placeholder.png',
-    isPast: isEventInPast(new Date('2024-09-15T09:00:00')),
-    startDate: new Date('2024-09-15T09:00:00'),
-    endDate: new Date('2024-09-15T10:00:00'),
+    name: 'Karaoke Night',
+    date: '2024-09-28',
+    image: '/assets/karaoke.png',
+    isPast: isEventInPast(new Date('2024-09-28T16:00:00')),
+    startDate: new Date('2024-09-28T16:00:00'),
+    endDate: new Date('2024-09-28T18:00:00'),
+    location: 'McClendon Tower',
+    description: '6th Floor',
   },
   {
-    id: '1',
-    name: 'Event B',
-    date: '2024-09-30',
-    image: '/people/person_placeholder.png',
-    isPast: isEventInPast(new Date('2024-09-30T09:00:00')),
-    startDate: new Date('2024-09-30T09:00:00'),
-    endDate: new Date('2024-09-30T10:00:00'),
+    id: '2',
+    name: 'Casino Night',
+    date: '2024-09-29',
+    image: '/assets/casino_night.png',
+    isPast: isEventInPast(new Date('2024-09-29T16:00:00')),
+    startDate: new Date('2024-09-29T16:00:00'),
+    endDate: new Date('2024-09-29T18:00:00'),
+    location: 'Crowell CC',
+    description: 'CC Common Room',
   },
 ];
+
