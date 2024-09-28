@@ -40,7 +40,8 @@ const AboutPage: NextPage<AboutPageProps> = ({
           <strong>Hometown:</strong> {member.hometown.replace('Hometown: ', '')}
         </p>
         <p className="text-sm text-black">
-          <strong>Languages:</strong> {member.languages.replace('Languages: ', '')}
+          <strong>Languages:</strong>{' '}
+          {member.languages.replace('Languages: ', '')}
         </p>
       </div>
     </div>

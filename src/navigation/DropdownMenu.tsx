@@ -9,10 +9,10 @@ const DropdownMenu: React.FC = () => (
       {/* Menu.Button is used to create the clickable area that toggles the dropdown */}
       <Menu.Button
         as="div" // Use `div` to make the button act as text instead of a button
-        className="inline-flex w-full cursor-pointer justify-center text-xl
-         font-medium text-gray-800 hover:text-primary-500 focus:outline-none 
-         focus-visible:ring-2 focus-visible:ring-black/75
-         sm:text-xl p-2 sm:p-4" // Add padding for touch-friendly targets on small screens
+        className="inline-flex w-full cursor-pointer justify-center p-2
+         text-xl font-medium text-gray-800 hover:text-primary-500 
+         focus:outline-none focus-visible:ring-2
+         focus-visible:ring-black/75 sm:p-4 sm:text-xl" // Add padding for touch-friendly targets on small screens
       >
         Members
       </Menu.Button>
@@ -40,7 +40,7 @@ const DropdownMenu: React.FC = () => (
                 <div
                   className={`${
                     active ? 'bg-primary-500 text-white' : 'text-black'
-                  } group flex w-full cursor-pointer items-center rounded-md p-4 sm:p-2 text-base sm:text-sm`} // Larger padding and font size for mobile
+                  } group flex w-full cursor-pointer items-center rounded-md p-4 text-base sm:p-2 sm:text-sm`} // Larger padding and font size for mobile
                 >
                   2023
                 </div>
@@ -53,7 +53,7 @@ const DropdownMenu: React.FC = () => (
                 <div
                   className={`${
                     active ? 'bg-primary-500 text-white' : 'text-black'
-                  } group flex w-full cursor-pointer items-center rounded-md p-4 sm:p-2 text-base sm:text-sm`} // Larger padding and font size for mobile
+                  } group flex w-full cursor-pointer items-center rounded-md p-4 text-base sm:p-2 sm:text-sm`} // Larger padding and font size for mobile
                 >
                   2024
                 </div>
@@ -66,7 +66,7 @@ const DropdownMenu: React.FC = () => (
                 <div
                   className={`${
                     active ? 'bg-primary-500 text-white' : 'text-black'
-                  } group flex w-full cursor-pointer items-center rounded-md p-4 sm:p-2 text-base sm:text-sm`} // Larger padding and font size for mobile
+                  } group flex w-full cursor-pointer items-center rounded-md p-4 text-base sm:p-2 sm:text-sm`} // Larger padding and font size for mobile
                 >
                   2025
                 </div>

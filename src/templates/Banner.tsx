@@ -16,7 +16,11 @@ const Banner = () => (
       title={
         <>
           Follow us on Instagram{' '}
-          <Link href="https://www.instagram.com/dukelangdorm" target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://www.instagram.com/dukelangdorm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             @dukelangdorm
           </Link>{' '}
           and be on the lookout for more information!

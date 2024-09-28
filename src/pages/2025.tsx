@@ -6,7 +6,9 @@ import membersData from '../data/2025_members.json'; // Import the 2024 members 
 import { MemberHero } from '../templates/2025Hero';
 import { Footer } from '../templates/Footer';
 
-const AboutPage: NextPage = () => {2
+const AboutPage: NextPage = () => {
+  2;
+
   // Extract executive members and class data from imported JSON
   const { executiveMembers, classesData } = membersData;
 
@@ -33,7 +35,8 @@ const AboutPage: NextPage = () => {2
           <strong>Hometown:</strong> {member.hometown.replace('Hometown: ', '')}
         </p>
         <p className="text-sm text-black">
-          <strong>Languages:</strong> {member.languages.replace('Languages: ', '')}
+          <strong>Languages:</strong>{' '}
+          {member.languages.replace('Languages: ', '')}
         </p>
       </div>
     </div>

@@ -12,7 +12,7 @@ const CTABanner = (props: ICTABannerProps) => (
   <div className="flex flex-col rounded-md bg-transparent p-4 text-center sm:flex-row sm:items-center sm:justify-between sm:p-8 sm:text-left">
     {/* Div for the title and subtitle section */}
     <div className="flex flex-col items-center sm:items-start">
-      <div className="text-xl font-bold text-primary-500 sm:text-2xl break-words">
+      <div className="break-words text-xl font-bold text-primary-500 sm:text-2xl">
         {props.title}
       </div>
       {props.subtitle && (

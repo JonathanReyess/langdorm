@@ -63,8 +63,8 @@ const VerticalFeatures = () => (
         src: '/assets/house_course.png',
         alt: 'Common Room',
         caption: '',
-        width: '500', 
-        height: '450', 
+        width: '500',
+        height: '450',
       }}
       descriptionClass="text-center max-w-xs h-32 mx-auto leading-snug"
     />

@@ -1,6 +1,6 @@
-import { useState } from 'react'; // Import useState hook for menu toggle
 import Link from 'next/link'; // Importing Link component from 'next/link'
 import type { ReactNode } from 'react'; // Importing ReactNode type from the 'react' library
+import { useState } from 'react'; // Import useState hook for menu toggle
 
 // Defining a type for the props expected by the NavbarTwoColumns component
 type INavbarProps = {
@@ -44,8 +44,12 @@ const NavbarTwoColumns = (props: INavbarProps) => {
       </div>
 
       {/* Navigation Menu (shown by default on larger screens) */}
-      <nav className={`w-full sm:w-auto ${isMenuOpen ? 'block' : 'hidden'} sm:flex`}>
-        <ul className="navbar flex flex-col sm:flex-row items-center text-xl font-medium text-gray-800">
+      <nav
+        className={`w-full sm:w-auto ${
+          isMenuOpen ? 'block' : 'hidden'
+        } sm:flex`}
+      >
+        <ul className="navbar flex flex-col items-center text-xl font-medium text-gray-800 sm:flex-row">
           {props.children}
         </ul>
       </nav>
