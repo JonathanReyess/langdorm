@@ -7,8 +7,6 @@ import { MemberHero } from '../templates/2025Hero';
 import { Footer } from '../templates/Footer';
 
 const AboutPage: NextPage = () => {
-  2;
-
   // Extract executive members and class data from imported JSON
   const { executiveMembers, classesData } = membersData;
 
