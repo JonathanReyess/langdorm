@@ -16,7 +16,6 @@ type IVerticalFeatureRowProps = {
   description: string;
   images: Image[] | Image;
   reverse?: boolean;
-  descriptionClass?: string; // New optional description class prop
 };
 
 const VerticalFeatureRow: React.FC<IVerticalFeatureRowProps> = (props) => {
@@ -56,9 +55,7 @@ const VerticalFeatureRow: React.FC<IVerticalFeatureRowProps> = (props) => {
         <h3 className="text-3xl font-semibold text-primary-500">
           {props.title}
         </h3>
-        <div className={`mt-6 text-xl leading-9 ${props.descriptionClass}`}>
-          {props.description}
-        </div>
+        <div className="mt-6 text-xl leading-9">{props.description}</div>
       </div>
 
       <div className="flex w-full flex-col items-center p-6 sm:w-1/2">

@@ -41,7 +41,6 @@ const VerticalFeatures = () => (
       title="What do we do?"
       description="Events range from language circles, cooking sessions, game nights, movie screenings, spontaneous trips, contests, picnics, and collaborations with language departments."
       images={images}
-      descriptionClass="text-center max-w-xs h-32 mx-auto leading-snug" // Set max width and height for consistent box sizing
     />
 
     <VerticalFeatureRow
@@ -53,7 +52,6 @@ const VerticalFeatures = () => (
         caption: '',
       }}
       reverse
-      descriptionClass="text-center max-w-xs h-32 mx-auto leading-snug"
     />
 
     <VerticalFeatureRow
@@ -66,7 +64,6 @@ const VerticalFeatures = () => (
         width: '500',
         height: '450',
       }}
-      descriptionClass="text-center max-w-xs h-32 mx-auto leading-snug"
     />
 
     <VerticalFeatureRow
@@ -79,7 +76,6 @@ const VerticalFeatures = () => (
         width: '350',
         height: '350',
       }}
-      descriptionClass="text-center max-w-xs h-32 mx-auto leading-snug"
     />
   </Section>
 );
