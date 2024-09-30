@@ -7,6 +7,7 @@ import { Banner } from './Banner';
 import { Footer } from './Footer';
 import { Hero } from './Hero';
 import { VerticalFeatures } from './VerticalFeatures';
+import { Analytics } from '@vercel/analytics/react';
 
 // Defining the Base component, which serves as the base layout for the application
 const Base = () => (
@@ -22,6 +23,8 @@ const Base = () => (
     <Banner />
     {/* Rendering the Footer component */}
     <Footer />
+    {/* Adding the Analytics component for tracking */}
+    <Analytics />
   </div>
 );
 
