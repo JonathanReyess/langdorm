@@ -1,11 +1,7 @@
-// Importing Head component from the 'next/head' package
 import Head from 'next/head';
-// Importing useRouter hook from 'next/router' package
-import { useRouter } from 'next/router';
-// Importing NextSeo component from 'next-seo' package
+// import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 
-// Importing AppConfig from the '../utils/AppConfig' file
 import { AppConfig } from '../utils/AppConfig';
 
 // Defining a type for the props expected by the Meta component
@@ -17,8 +13,7 @@ type IMetaProps = {
 
 // Defining the Meta component, which takes props of type IMetaProps
 const Meta = (props: IMetaProps) => {
-  // Getting the router object using the useRouter hook
-  const router = useRouter();
+  // const router = useRouter();
 
   // Returning a fragment containing Head and NextSeo components
   return (
@@ -77,7 +72,7 @@ const Meta = (props: IMetaProps) => {
           site_name: AppConfig.site_name, // Setting the Open Graph site name
           images: [
             {
-              url: `${router.basePath}/langdorm-solid-bg.png`, // Path to your Open Graph image
+              url: '/assets/langdorm-solid-bg.png', // Path to your Open Graph image
               width: 1200,
               height: 630,
               alt: 'LangDorm Open Graph Image',
