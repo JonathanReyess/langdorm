@@ -38,6 +38,16 @@ const Meta = (props: IMetaProps) => {
           key="apple"
         />
         <link
+          rel="android-chrome-icon"
+          href={`${router.basePath}/android-chrome-192x192.png`}
+          key="android192"
+        />
+        <link
+          rel="android-chrome-icon"
+          href={`${router.basePath}/android-chrome-512x512.png`}
+          key="android512"
+        />
+        <link
           rel="icon"
           type="image/png"
           sizes="32x32"
@@ -69,6 +79,14 @@ const Meta = (props: IMetaProps) => {
           url: props.canonical, // Setting the Open Graph canonical URL
           locale: AppConfig.locale, // Setting the Open Graph locale
           site_name: AppConfig.site_name, // Setting the Open Graph site name
+          images: [
+            {
+              url: `${router.basePath}/langdorm-solid-bg.png`, // Path to your Open Graph image
+              width: 1200,
+              height: 630,
+              alt: 'LangDorm Open Graph Image',
+            },
+          ],
         }}
       />
     </>
