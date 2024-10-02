@@ -1,6 +1,8 @@
 // Importing global CSS styles
 import '../styles/global.css';
 
+// Import the Analytics component from Vercel Analytics
+import { Analytics } from '@vercel/analytics/react';
 // Importing AppProps type from 'next/app' package
 import type { AppProps } from 'next/app';
 import Link from 'next/link';
@@ -11,9 +13,6 @@ import { Section } from '../layout/Section';
 import DropdownMenu from '../navigation/DropdownMenu';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from '../templates/Logo';
-
-// Import the Analytics component from Vercel Analytics
-import { Analytics } from '@vercel/analytics/react';
 
 // Define the MyApp component to include the navigation bar and analytics
 const MyApp = ({ Component, pageProps }: AppProps) => (
@@ -41,7 +40,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
 
     {/* Rendering the current page component */}
     <Component {...pageProps} />
-    
+
     {/* Adding Vercel Analytics */}
     <Analytics />
   </>
