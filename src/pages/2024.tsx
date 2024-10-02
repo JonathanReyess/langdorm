@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import React from 'react';
+import Image from 'next/image'; // Import the Next.js Image component
 
 // Importing components
 import { MemberHero } from '../components/hero/MemberHero';
@@ -17,11 +18,13 @@ const AboutPage: NextPage = () => {
       className="flex w-full flex-col items-center p-4 sm:w-1/2 md:w-1/4"
     >
       <div className="relative h-48 w-48 sm:h-60 sm:w-60">
-        {/* Adjust sizes here */}
-        <img
+        {/* Use Next.js Image component */}
+        <Image
           src={member.imageUrl}
           alt={member.name}
-          className={`h-full w-full border-4 object-cover ${member.borderColor}`} // Changed to w-full and h-full
+          fill  // Replaces layout="fill"
+          className={`object-cover border-4 ${member.borderColor}`} // Apply styling classes
+          sizes="(max-width: 640px) 50vw, (min-width: 641px) 25vw" // Adjust size based on viewport
         />
       </div>
       <div className="mt-2 text-center">
