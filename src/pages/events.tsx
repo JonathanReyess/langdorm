@@ -1,5 +1,6 @@
 import React from 'react';
 import EventsList from 'src/templates/EventList';
+
 import { Footer } from '../templates/Footer';
 
 const Events: React.FC = () => {

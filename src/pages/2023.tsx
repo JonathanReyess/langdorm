@@ -1,10 +1,10 @@
 import type { GetStaticProps, NextPage } from 'next';
-import React from 'react';
 import Image from 'next/image'; // Import Image component
+import React from 'react';
 
+import { MemberHero } from '../components/hero/MemberHero'; // Import the reusable Hero component
 import membersData from '../data/2023_members.json'; // Import the JSON file directly
 import { Footer } from '../templates/Footer';
-import { MemberHero } from '../components/hero/MemberHero'; // Import the reusable Hero component
 
 interface AboutPageProps {
   executiveMembers: any[];

@@ -1,10 +1,10 @@
 import type { NextPage } from 'next';
 import React from 'react';
 
-import membersData from '../data/2024_members.json'; // Import the 2024 members JSON file
-import { Footer } from '../templates/Footer';
 // Importing components
 import { MemberHero } from '../components/hero/MemberHero';
+import membersData from '../data/2024_members.json'; // Import the 2024 members JSON file
+import { Footer } from '../templates/Footer';
 
 const AboutPage: NextPage = () => {
   // Extract executive members and class data from imported JSON
