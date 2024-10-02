@@ -34,7 +34,7 @@ const VerticalFeatures = () => (
   >
     {/* Center the image */}
     <div className="flex justify-center">
-      <img src="/assets/LD-group-photo.jpg" alt="Who We Are Image" />
+      <img src="/assets/ld_2023.jpg" alt="Who We Are Image" />
     </div>
 
     <VerticalFeatureRow

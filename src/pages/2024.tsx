@@ -2,9 +2,9 @@ import type { NextPage } from 'next';
 import React from 'react';
 
 import membersData from '../data/2024_members.json'; // Import the 2024 members JSON file
-// Importing components
-import { MemberHero } from '../templates/2024Hero';
 import { Footer } from '../templates/Footer';
+// Importing components
+import { MemberHero } from '../templates/MemberHero';
 
 const AboutPage: NextPage = () => {
   // Extract executive members and class data from imported JSON
@@ -42,7 +42,8 @@ const AboutPage: NextPage = () => {
 
   return (
     <>
-      <MemberHero />
+      <MemberHero title="2023-2024" imageSrc="/assets/ld_2023.jpg" />{' '}
+      {/* Update title and image as needed */}
       {/* Main Content */}
       <div className="container mx-auto mb-8 p-8 text-center">
         {/* Executive Members Section */}

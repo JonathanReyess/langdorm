@@ -2,8 +2,8 @@ import type { GetStaticProps, NextPage } from 'next';
 import React from 'react';
 
 import membersData from '../data/2023_members.json'; // Import the JSON file directly
-import { MemberHero } from '../templates/2023Hero';
 import { Footer } from '../templates/Footer';
+import { MemberHero } from '../templates/MemberHero'; // Import the reusable Hero component
 
 // Props type for the component
 interface AboutPageProps {
@@ -49,7 +49,9 @@ const AboutPage: NextPage<AboutPageProps> = ({
 
   return (
     <>
-      <MemberHero />
+      {/* Use the Hero component with dynamic title and image */}
+      <MemberHero title="2022-2023" imageSrc="/assets/ld_2022.png" />{' '}
+      {/* Update title and image as needed */}
       {/* Main Content */}
       <div className="container mx-auto mb-8 p-8 text-center">
         {/* Executive Members Section */}
