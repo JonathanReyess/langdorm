@@ -1,5 +1,5 @@
 import Head from 'next/head';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'; // Uncomment this
 import { NextSeo } from 'next-seo';
 
 import { AppConfig } from '../utils/AppConfig';
@@ -13,7 +13,7 @@ type IMetaProps = {
 
 // Defining the Meta component, which takes props of type IMetaProps
 const Meta = (props: IMetaProps) => {
-  // const router = useRouter();
+  const router = useRouter(); // Use the router object
 
   // Returning a fragment containing Head and NextSeo components
   return (
@@ -23,40 +23,44 @@ const Meta = (props: IMetaProps) => {
         <meta charSet="UTF-8" key="charset" />
         <meta
           name="viewport"
-          content="width=device-width,initial-scale=1"
+          content="width=device-width, initial-scale=1"
           key="viewport"
         />
         {/* Links for different sizes of favicon */}
         <link
           rel="apple-touch-icon"
-          href="/assets/apple-touch-icon.png"
+          href={`${router.basePath}/assets/apple-touch-icon.png`} // Use router.basePath
           key="apple"
         />
         <link
           rel="android-chrome-icon"
-          href="/assets/android-chrome-192x192.png"
+          href={`${router.basePath}/assets/android-chrome-192x192.png`} // Use router.basePath
           key="android192"
         />
         <link
           rel="android-chrome-icon"
-          href="/assets/android-chrome-512x512.png"
+          href={`${router.basePath}/assets/android-chrome-512x512.png`} // Use router.basePath
           key="android512"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/assets/favicon-32x32.png"
+          href={`${router.basePath}/assets/favicon-32x32.png`} // Use router.basePath
           key="icon32"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/assets/favicon-16x16.png"
+          href={`${router.basePath}/assets/favicon-16x16.png`} // Use router.basePath
           key="icon16"
         />
-        <link rel="icon" href="/assets/favicon.ico" key="favicon" />
+        <link
+          rel="icon"
+          href={`${router.basePath}/assets/favicon.ico`} // Use router.basePath
+          key="favicon"
+        />
       </Head>
       {/* NextSeo component for configuring SEO-related metadata */}
       <NextSeo
@@ -72,7 +76,7 @@ const Meta = (props: IMetaProps) => {
           site_name: AppConfig.site_name, // Setting the Open Graph site name
           images: [
             {
-              url: '/assets/langdorm-solid-bg.png', // Path to your Open Graph image
+              url: `${router.basePath}/assets/langdorm-solid-bg.png`, // Use router.basePath for Open Graph image
               width: 1200,
               height: 630,
               alt: 'LangDorm Open Graph Image',
