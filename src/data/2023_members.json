@@ -383,9 +383,9 @@
       {
        "id": 3,
         "name": "Erica Shen",
-        "major": "Major: ",
+        "major": "Major: Computer Science",
         "hometown": "Hometown: ",
-        "languages": "Languages: ",
+        "languages": "Languages: Mandarin, French",
         "imageUrl": "/people/person_placeholder.png"
       },
       {
@@ -439,9 +439,9 @@
       {
        "id": 10,
         "name": "Montana Lee",
-        "major": "Major: ",
-        "hometown": "Hometown: ",
-        "languages": "Languages: ",
+        "major": "Major: Math, Decision Sciences",
+        "hometown": "Hometown: New York, NY",
+        "languages": "Languages: French",
         "imageUrl": "/people/person_placeholder.png"
       },
       {
@@ -449,7 +449,7 @@
         "name": "Shelby Hartman",
         "major": "Major: ",
         "hometown": "Hometown: ",
-        "languages": "Languages: ",
+        "languages": "Languages: French",
         "imageUrl": "/people/person_placeholder.png"
       },
       {

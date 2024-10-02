@@ -132,8 +132,16 @@
          "languages": "Languages: Mandarin, French",
          "imageUrl": "/people/sophia_li.jpeg"
        },
+       {
+        "id": 7,
+         "name": "Valerie Tan",
+         "major": "Major: ",
+         "hometown": "Hometown: ",
+         "languages": "Languages: ",
+         "imageUrl": "/people/person_placeholder.png"
+       },
       {
-       "id": 6,
+       "id": 8,
         "name": "Zoey Chen",
         "major": "Major: Computational Media, Chinese",
         "hometown": "Hometown: ",
@@ -191,7 +199,15 @@
         "imageUrl": "/people/eric_wang.png"
       },
       {
-       "id": 7,
+        "id": 7,
+         "name": "Erica Shen",
+         "major": "Major: Computer Science ",
+         "hometown": "Hometown: ",
+         "languages": "Languages: Mandarin, French",
+         "imageUrl": "/people/person_placeholder.png"
+       },
+      {
+       "id": 8,
         "name": "Grace Richardson",
         "major": "Major: Neuroscience, Spanish",
         "hometown": "Hometown: Minneapolis, Minnesota",
@@ -199,7 +215,7 @@
         "imageUrl": "/people/grace_richardson.jpg"
       },
       {
-       "id": 8,
+       "id": 9,
         "name": "Hannah Hortman",
         "major": "Major: Neuroscience, Chinese",
         "hometown": "Hometown: ",
@@ -207,7 +223,7 @@
         "imageUrl": "/people/hannah_hortman.jpg"
       },
       {
-       "id": 9,
+       "id": 10,
         "name": "Katherine Chen",
         "major": "Major: Computational Media ",
         "hometown": "Hometown: ",
@@ -215,7 +231,15 @@
         "imageUrl": "/people/person_placeholder.png"
       },
       {
-       "id": 10,
+        "id": 11,
+         "name": "Montana Lee",
+         "major": "Major: Math, Decision Sciences",
+         "hometown": "Hometown: New York, NY",
+         "languages": "Languages: French",
+         "imageUrl": "/people/person_placeholder.png"
+       },
+      {
+       "id": 12,
         "name": "Sarah Gorbatov",
         "major": "Major: ",
         "hometown": "Hometown: ",
@@ -223,15 +247,15 @@
         "imageUrl": "/people/person_placeholder.png"
       },
       {
-       "id": 11,
+       "id": 13,
         "name": "Shelby Hartman",
         "major": "Major: ",
         "hometown": "Hometown: ",
-        "languages": "Languages:",
+        "languages": "Languages: French",
         "imageUrl": "/people/person_placeholder.png"
       },
       {
-       "id": 12,
+       "id": 14,
         "name": "William Chen",
         "major": "Major: Math, CS ",
         "hometown": "Hometown: Franklinton, NC",
@@ -239,7 +263,7 @@
         "imageUrl": "/people/william_chen.png"
       },
       {
-       "id": 13,
+       "id": 15,
         "name": "Yanlin Li",
         "major": "Major: Economics, Psychology ",
         "hometown": "Hometown: Shaghai, China",
