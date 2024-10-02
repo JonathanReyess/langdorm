@@ -124,6 +124,14 @@
          "languages": "Languages: Mandarin",
          "imageUrl": "/people/lyndrinn_yao.jpeg"
        },
+       {
+        "id": 6,
+         "name": "Sophia Li",
+         "major": "Major: Neuroscience ",
+         "hometown": "Hometown: Toronto, Canada",
+         "languages": "Languages: Mandarin, French",
+         "imageUrl": "/people/sophia_li.jpeg"
+       },
       {
        "id": 6,
         "name": "Zoey Chen",
