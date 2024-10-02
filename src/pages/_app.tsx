@@ -12,7 +12,10 @@ import DropdownMenu from '../navigation/DropdownMenu';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from '../templates/Logo';
 
-// Define the MyApp component to include the navigation bar
+// Import the Analytics component from Vercel Analytics
+import { Analytics } from '@vercel/analytics/react';
+
+// Define the MyApp component to include the navigation bar and analytics
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
     <Background color="">
@@ -22,7 +25,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
           <li>
             <Link href="/#about" className="nav-link about-link">
               About
-            </Link>{' '}
+            </Link>
           </li>
           <li>
             <DropdownMenu />
@@ -30,7 +33,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
           <li>
             <Link href="/events" className="nav-link events-link">
               Events
-            </Link>{' '}
+            </Link>
           </li>
         </NavbarTwoColumns>
       </Section>
@@ -38,6 +41,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
 
     {/* Rendering the current page component */}
     <Component {...pageProps} />
+    
+    {/* Adding Vercel Analytics */}
+    <Analytics />
   </>
 );
 

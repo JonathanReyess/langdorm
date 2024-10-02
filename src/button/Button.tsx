@@ -1,8 +1,11 @@
+import { track } from '@vercel/analytics'; // Importing the track function
 import className from 'classnames'; // Importing classnames library for conditional class application
 
 type IButtonProps = {
   xl?: boolean; // Optional prop for indicating extra large button size
   children: string; // Content of the button as a string
+  eventName?: string; // Optional prop for custom event name
+  customData?: Record<string, any>; // Optional prop for custom data
 };
 
 // Button component renders a styled button with customizable size and content
@@ -15,9 +18,14 @@ const Button = (props: IButtonProps) => {
     'btn-primary': true, // Class for primary button color
   });
 
+  // Define the click handler for the button
+  const handleClick = () => {
+    // Track the button click event
+    track(props.eventName || 'Button Clicked', props.customData); // Track with custom event name and data
+  };
+
   return (
-    <div className={btnClass}>
-      {' '}
+    <div className={btnClass} onClick={handleClick}>
       {/* Render the button with computed classes */}
       {props.children} {/* Render the content inside the button */}
       {/* Inline styles for button styling */}
