@@ -1,5 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
-
 // Importing Meta component from '../layout/Meta' file
 import { Meta } from '../layout/Meta';
 // Importing AppConfig from the '../utils/AppConfig' file
@@ -25,7 +23,6 @@ const Base = () => (
     {/* Rendering the Footer component */}
     <Footer />
     {/* Adding the Analytics component for tracking */}
-    <Analytics />
   </div>
 );
 
