@@ -2,10 +2,10 @@
 import Link from 'next/link';
 
 // Importing Button and CTABanner components from their respective files
-import { Button } from '../button/Button';
-import { CTABanner } from '../cta/CTABanner';
+import { Button } from '../components/button/Button';
+import { CTABanner } from '../components/cta/CTABanner';
 // Importing Section component from '../layout/Section' file
-import { Section } from '../layout/Section';
+import { Section } from '../components/layout/Section';
 
 // Defining the Banner component, which renders a section with a call-to-action banner
 const Banner = () => (

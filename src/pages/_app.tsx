@@ -7,11 +7,11 @@ import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
 import Link from 'next/link';
 
-import { Background } from '../background/Background';
+import { Background } from '../components/background/Background';
 // Import the necessary components for the navigation bar
-import { Section } from '../layout/Section';
-import DropdownMenu from '../navigation/DropdownMenu';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { Section } from '../components/layout/Section';
+import DropdownMenu from '../components/navigation/DropdownMenu';
+import { NavbarTwoColumns } from '../components/navigation/NavbarTwoColumns';
 import { Logo } from '../templates/Logo';
 
 // Define the MyApp component to include the navigation bar and analytics

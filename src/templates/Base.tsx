@@ -1,5 +1,5 @@
 // Importing Meta component from '../layout/Meta' file
-import { Meta } from '../layout/Meta';
+import { Meta } from '../components/layout/Meta';
 // Importing AppConfig from the '../utils/AppConfig' file
 import { AppConfig } from '../utils/AppConfig';
 // Importing Banner, Footer, Hero, and VerticalFeatures components from their respective files

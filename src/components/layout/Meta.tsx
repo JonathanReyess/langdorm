@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router'; // Uncomment this
 import { NextSeo } from 'next-seo';
 
-import { AppConfig } from '../utils/AppConfig';
+import { AppConfig } from '../../utils/AppConfig';
 
 // Defining a type for the props expected by the Meta component
 type IMetaProps = {

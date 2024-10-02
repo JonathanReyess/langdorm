@@ -2,9 +2,9 @@
 import Link from 'next/link';
 
 // Importing Background, Button, HeroOneButton, Section, NavbarTwoColumns, and Logo components from their respective files
-import { Button } from '../button/Button';
-import { HeroOneButton } from '../hero/HeroOneButton';
-import { Section } from '../layout/Section';
+import { Button } from '../components/button/Button';
+import { HeroOneButton } from '../components/hero/HeroOneButton';
+import { Section } from '../components/layout/Section';
 
 // Defining the Hero component, which renders a hero section with navigation and a call-to-action button
 const Hero = () => (

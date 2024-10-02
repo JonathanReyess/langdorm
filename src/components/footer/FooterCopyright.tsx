@@ -1,5 +1,5 @@
 // Importing AppConfig from the '../utils/AppConfig' file
-import { AppConfig } from '../utils/AppConfig';
+import { AppConfig } from '../../utils/AppConfig';
 
 // Defining the FooterCopyright component
 const FooterCopyright = () => (

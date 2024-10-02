@@ -2,9 +2,9 @@
 import Link from 'next/link';
 
 // Importing Background, CenteredFooter, Section, and Logo components from their respective files
-import { Background } from '../background/Background';
-import { CenteredFooter } from '../footer/CenteredFooter';
-import { Section } from '../layout/Section';
+import { Background } from '../components/background/Background';
+import { CenteredFooter } from '../components/footer/CenteredFooter';
+import { Section } from '../components/layout/Section';
 import { Logo } from './Logo';
 
 // Defining the Footer component, which renders a footer section with centered content
