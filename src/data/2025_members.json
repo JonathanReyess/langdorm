@@ -273,7 +273,15 @@
         "imageUrl": "/people/johanna_murphy.jpeg"
       },
       {
-       "id": 5,
+        "id": 5,
+         "name": "Liane Ma",
+         "major": "Major: Statistics, Computer Science ",
+         "hometown": "Hometown: Cary, NC ",
+         "languages": "Languages:",
+         "imageUrl": "/people/liane_ma.jpeg"
+       },
+      {
+       "id": 6,
         "name": "Larkin Woodard",
         "major": "Major: Spanish, Neuroscience",
         "hometown": "Hometown: Cary, NC ",
@@ -281,7 +289,7 @@
         "imageUrl": "/people/larkin_woodard.jpeg"
       },
       {
-       "id": 6,
+       "id": 7,
         "name": "Mark Gikas",
         "major": "Major: Economics, CS ",
         "hometown": "Hometown: Hong Kong ",
@@ -289,7 +297,7 @@
         "imageUrl": "/people/mark_gikas.jpeg"
       },
       {
-       "id": 7,
+       "id": 8,
         "name": "Tanya Pan",
         "major": "Major: Physics",
         "hometown": "Hometown: Heidelberg, Germany",
@@ -297,7 +305,7 @@
         "imageUrl": "/people/tanya_pan.png"
       },
       {
-       "id": 8,
+       "id": 9,
         "name": "Yoojin Park",
         "major": "Major: Biology, Statistics ",
         "hometown": "Hometown: Nashville, TN ",
