@@ -10,7 +10,7 @@ import { Section } from '../components/layout/Section';
 const Hero = () => (
   <>
     {/* Rendering another Section component with customized vertical padding */}
-    <Section yPadding="pt-30 pb-20">
+    <Section yPadding="pt-30 pb-10">
       {/* Adjust the top padding here */}
       {/* Rendering a HeroOneButton component with a title, description, and call-to-action button */}
       <HeroOneButton
@@ -23,7 +23,7 @@ const Hero = () => (
               className="object-none" // CSS class for image styling
               style={{
                 height: '410px',
-                width: '1080px',
+                width: '400px',
                 marginLeft: '0px',
                 marginRight: '17px',
               }} // Inline style for image dimensions
@@ -42,16 +42,6 @@ const Hero = () => (
         }
       />
     </Section>
-    {/* Add a media query to adjust image size on mobile */}
-    <style jsx>{`
-      @media (max-width: 640px) {
-        /* Tailwind's md breakpoint is 640px */
-        img {
-          height: 250px; /* Adjust height for mobile */
-          width: auto; /* Maintain aspect ratio */
-        }
-      }
-    `}</style>
   </>
 );
 

@@ -27,7 +27,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
         >
           {/* Hamburger icon: 3 bars */}
           <svg
-            className="h-8 w-8" // Increase from h-6 w-6 to h-8 w-8
+            className="h-9 w-9" // Increase from h-6 w-6 to h-8 w-8
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -37,7 +37,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
+              d="M0 6h16M0 12h16m-7 6h7"
             ></path>
           </svg>
         </button>
