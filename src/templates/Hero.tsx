@@ -42,6 +42,16 @@ const Hero = () => (
         }
       />
     </Section>
+    {/* Add a media query to adjust image size on mobile */}
+    <style jsx>{`
+      @media (max-width: 640px) {
+        /* Tailwind's md breakpoint is 640px */
+        img {
+          height: 250px; /* Adjust height for mobile */
+          width: auto; /* Maintain aspect ratio */
+        }
+      }
+    `}</style>
   </>
 );
 
