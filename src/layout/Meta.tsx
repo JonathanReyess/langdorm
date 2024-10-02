@@ -61,11 +61,7 @@ const Meta = (props: IMetaProps) => {
           href="/assets/favicon-16x16.png"
           key="icon16"
         />
-        <link
-          rel="icon"
-          href="/assets/favicon.ico"
-          key="favicon"
-        />
+        <link rel="icon" href="/assets/favicon.ico" key="favicon" />
       </Head>
       {/* NextSeo component for configuring SEO-related metadata */}
       <NextSeo
