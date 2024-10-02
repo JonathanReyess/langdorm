@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
-import React from 'react';
 import Image from 'next/image'; // Import the Next.js Image component
+import React from 'react';
 
 // Importing components
 import { MemberHero } from '../components/hero/MemberHero';
@@ -22,8 +22,8 @@ const AboutPage: NextPage = () => {
         <Image
           src={member.imageUrl}
           alt={member.name}
-          fill  // Replaces layout="fill"
-          className={`object-cover border-4 ${member.borderColor}`} // Apply styling classes
+          fill // Replaces layout="fill"
+          className={`border-4 object-cover ${member.borderColor}`} // Apply styling classes
           sizes="(max-width: 640px) 50vw, (min-width: 641px) 25vw" // Adjust size based on viewport
         />
       </div>
