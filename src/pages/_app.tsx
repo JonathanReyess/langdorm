@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 // Importing AppProps type from 'next/app' package
 import type { AppProps } from 'next/app';
 import Link from 'next/link';
+import Head from 'next/head';
 
 import { Background } from '../components/background/Background';
 // Import the necessary components for the navigation bar
@@ -17,6 +18,18 @@ import { Logo } from '../templates/Logo';
 // Define the MyApp component to include the navigation bar and analytics
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
+    <Head>
+      <title>LangDorm - Connect, Learn, and Share Languages</title>
+      <meta name="description" content="LangDorm is a community for language enthusiasts to connect, learn, and share." />
+      <meta name="keywords" content="LangDorm, language learning, community, cultural appreciation" />
+      <meta property="og:title" content="LangDorm - Connect, Learn, and Share Languages" />
+      <meta property="og:description" content="LangDorm is a community for language enthusiasts to connect, learn, and share." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://langdorm.org/" />
+      <meta property="og:image" content="/path/to/your-image.jpg" />
+      <meta name="robots" content="index, follow" />
+    </Head>
+
     <Background color="">
       {/* Section for the Navigation Bar */}
       <Section yPadding="py-6">
