@@ -22,11 +22,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       <title>LangDorm - Connect, Learn, and Share Languages</title>
       <meta
         name="description"
-        content="LangDorm is a community for language enthusiasts to connect, learn, and share."
+        content="LangDorm is a community at Duke Univeristy for language enthusiasts to come together and connect, learn, and share."
       />
       <meta
         name="keywords"
-        content="LangDorm, language learning, community, cultural appreciation"
+        content="LangDorm, Duke, LLC, language learning, community, cultural appreciation"
       />
       <meta
         property="og:title"
@@ -34,11 +34,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       />
       <meta
         property="og:description"
-        content="LangDorm is a community for language enthusiasts to connect, learn, and share."
+        content="LangDorm is a community at Duke University for language enthusiasts to connect, learn, and share."
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://langdorm.org/" />
-      <meta property="og:image" content="/path/to/your-image.jpg" />
+      <meta property="og:image" content="/assets/langdorm-solid-bg.png" />
       <meta name="robots" content="index, follow" />
     </Head>
 
