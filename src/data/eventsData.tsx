@@ -86,4 +86,16 @@ export const events: Event[] = [
     location: 'McClendon Tower',
     description: '5th Floor',
   },
+  {
+    id: '5',
+    name: 'Langsgiving',
+    date: '2024-11-19',
+    image: '/assets/langsgiving.png',
+    isPast: isEventInPast(new Date('2024-11-19T19:00:00')),
+    startDate: new Date('2024-11-19T19:00:00'),
+    endDate: new Date('2024-11-19T22:00:00'),
+    location: 'TBA',
+    description: 'TBA',
+  },
+  
 ];
