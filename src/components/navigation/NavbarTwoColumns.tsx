@@ -1,16 +1,17 @@
-import Link from 'next/link'; // Importing Link component from 'next/link'
-import type { ReactNode } from 'react'; // Importing ReactNode type from the 'react' library
-import { useState } from 'react'; // Import useState hook for menu toggle
+import Link from 'next/link';
+import type { ReactNode } from 'react';
+import { useState, cloneElement, Children } from 'react';
 
-// Defining a type for the props expected by the NavbarTwoColumns component
 type INavbarProps = {
-  logo: ReactNode; // ReactNode type represents the type of children elements that can be rendered within a React component
-  children: ReactNode; // ReactNode type represents the type of children elements that can be rendered within a React component
+  logo: ReactNode;
+  children: ReactNode;
 };
 
-// Defining the NavbarTwoColumns component, which takes props of type INavbarProps
 const NavbarTwoColumns = (props: INavbarProps) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to track whether the mobile menu is open
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Function to close the menu
+  const handleCloseMenu = () => setIsMenuOpen(false);
 
   return (
     <div className="flex flex-wrap items-center justify-between py-4">
@@ -25,9 +26,8 @@ const NavbarTwoColumns = (props: INavbarProps) => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-gray-800 hover:text-primary-500 focus:outline-none"
         >
-          {/* Hamburger icon: 3 bars */}
           <svg
-            className="h-9 w-9" // Increase from h-6 w-6 to h-8 w-8
+            className="h-9 w-9"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -43,14 +43,18 @@ const NavbarTwoColumns = (props: INavbarProps) => {
         </button>
       </div>
 
-      {/* Navigation Menu (shown by default on larger screens) */}
+      {/* Navigation Menu */}
       <nav
         className={`w-full sm:w-auto ${
           isMenuOpen ? 'block' : 'hidden'
         } sm:flex`}
       >
         <ul className="navbar flex flex-col items-center text-xl font-medium text-gray-800 sm:flex-row">
-          {props.children}
+          {Children.map(props.children, (child) =>
+            cloneElement(child as React.ReactElement, {
+              onClick: handleCloseMenu,
+            })
+          )}
         </ul>
       </nav>
 
@@ -60,7 +64,6 @@ const NavbarTwoColumns = (props: INavbarProps) => {
           .navbar :global(li:not(:first-child)) {
             @apply mt-4 sm:mt-0;
           }
-
           .navbar :global(li:not(:last-child)) {
             @apply sm:mr-5;
           }
@@ -70,5 +73,4 @@ const NavbarTwoColumns = (props: INavbarProps) => {
   );
 };
 
-// Exporting the NavbarTwoColumns component for use in other parts of the application
 export { NavbarTwoColumns };

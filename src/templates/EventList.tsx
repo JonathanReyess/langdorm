@@ -11,52 +11,56 @@ const ListContainer = styled.div`
   overflow-x: auto;
   padding: 20px;
   scroll-snap-type: x mandatory;
-  width: calc(5 * 250px + 80px);
+  width: 100%; /* Make width responsive */
   margin: 0 auto;
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    padding: 10px; /* Reduce padding for mobile */
   }
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
-  justify-content: center; /* Center button horizontally */
-  margin: 50px 0; /* Add some vertical margin */
+  justify-content: center;
+  margin: 30px 0; /* Reduce margin for mobile */
+
+  @media (max-width: 768px) {
+    margin: 20px 0; /* Further reduce margin for smaller screens */
+  }
 `;
 
 const ToggleButton = styled.button`
-  padding: 10px 20px;
+  width: 200px; /* Set a fixed width for consistent size on all screens */
+  padding: 8px 16px;
+  font-size: 1rem;
   border: none;
   background-color: #c4b5fd;
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  transition:
-    transform 0.3s,
-    background-color 0.3s,
-    box-shadow 0.3s; /* Smooth transition for effects */
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 
   &:hover {
-    background-color: #a68cfc; /* Darker shade on hover */
-    transform: scale(1.1); /* Slightly enlarge button */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    background-color: #a68cfc;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
+
+  /* Remove the mobile-specific width adjustment */
 `;
 
 const EventsList: React.FC = () => {
   const [showPast, setShowPast] = useState(false);
 
-  // Filter events based on `showPast` state
   const filteredEvents = events.filter((event) => event.isPast === showPast);
-
-  console.log('Events:', events); // Log to check events
-  console.log('Filtered Events:', filteredEvents); // Log to check filtered events
 
   return (
     <div>
-      {/* Container to center the button */}
       <ButtonContainer>
-        {/* Button with event count */}
         <ToggleButton onClick={() => setShowPast(!showPast)}>
           {showPast
             ? `Past Events (${filteredEvents.length})`

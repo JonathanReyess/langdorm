@@ -11,7 +11,7 @@ interface EventCardProps {
 // Styled component for the card layout
 const Card = styled.div<{ isFlipped: boolean }>`
   flex: 0 0 250px; /* Fixed width of each card */
-  margin: 0 15px; /* Margin around each card */
+  margin: 0 15px 25px; /* Margin around each card */
   display: flex;
   flex-direction: column;
   align-items: center; /* Center content horizontally */
