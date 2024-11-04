@@ -97,5 +97,4 @@ export const events: Event[] = [
     location: 'TBA',
     description: 'TBA',
   },
-  
 ];
