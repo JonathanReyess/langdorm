@@ -53,4 +53,7 @@ We welcome contributions! If you'd like to contribute to the LangDorm website, p
 Licensed under the MIT License, Copyright © 2024
 
 See [LICENSE](LICENSE) for more information.
+
+```
+
 ```

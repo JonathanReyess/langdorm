@@ -4,27 +4,24 @@
 
 @tailwind utilities;
 
-
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 .nav-link {
-text-decoration: none;
-color: #2d3748 /* Default color */
+  text-decoration: none;
+  color: #2d3748; /* Default color */
 }
 
 .about-link:hover {
-color: #c4b5fd; /* Color for About link on hover */
+  color: #c4b5fd; /* Color for About link on hover */
 }
 
 .events-link:hover {
-color: #c4b5fd; /* Color for Events link on hover */
+  color: #c4b5fd; /* Color for Events link on hover */
 }
 
 .dx-scheduler-appointment {
   background-color: yellow !important; /* Change to your desired color */
   color: black !important; /* Change text color if needed */
 }
-
-

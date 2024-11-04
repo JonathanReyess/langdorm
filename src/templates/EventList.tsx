@@ -42,7 +42,10 @@ const ToggleButton = styled.button`
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    background-color 0.3s,
+    box-shadow 0.3s;
 
   &:hover {
     background-color: #a68cfc;

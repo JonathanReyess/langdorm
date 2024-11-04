@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { useState, cloneElement, Children } from 'react';
+import { Children, cloneElement, useState } from 'react';
 
 type INavbarProps = {
   logo: ReactNode;
@@ -53,7 +53,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
           {Children.map(props.children, (child) =>
             cloneElement(child as React.ReactElement, {
               onClick: handleCloseMenu,
-            })
+            }),
           )}
         </ul>
       </nav>
