@@ -21,7 +21,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
       </div>
 
       {/* Mobile Menu Toggle (Hamburger Icon) */}
-      <div className="sm:hidden">
+      <div className="sm:hidden mr-4"> {/* Added mr-4 for right margin */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-gray-800 hover:text-primary-500 focus:outline-none"
