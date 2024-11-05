@@ -11,9 +11,9 @@
     {
       "id": 2,
       "name": "Jadelyn Ding, Vice President",
-      "major": "Major: ",
+      "major": "Major: Biology, Evolutionary Anthropology ",
       "hometown": "Hometown: ",
-      "languages": "Languages:",
+      "languages": "Languages: Mandarin, French",
       "imageUrl": "/people/jadelyn_ding.jpg"
     },
     {
@@ -432,7 +432,7 @@
         "major": "Major: Biology, Music",
         "hometown": "Hometown: Miami, FL",
         "languages": "Languages: Spanish, Hindi",
-        "imageUrl": "/people/priya_ghanta.jpg"
+        "imageUrl": "/people/priya_ghanta.JPG"
       }
     ]
   }
