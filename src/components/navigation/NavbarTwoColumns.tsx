@@ -22,8 +22,6 @@ const NavbarTwoColumns = (props: INavbarProps) => {
 
       {/* Mobile Menu Toggle (Hamburger Icon) */}
       <div className="mr-4 sm:hidden">
-        {' '}
-        {/* Added mr-4 for right margin */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-gray-800 hover:text-primary-500 focus:outline-none"
@@ -54,7 +52,12 @@ const NavbarTwoColumns = (props: INavbarProps) => {
         <ul className="navbar flex flex-col items-center text-xl font-medium text-gray-800 sm:flex-row">
           {Children.map(props.children, (child) =>
             cloneElement(child as React.ReactElement, {
-              onClick: handleCloseMenu,
+              onClick: (e: React.MouseEvent) => {
+                // Prevent menu from closing if "Members" is clicked
+                if ((e.target as HTMLElement).textContent !== 'Members') {
+                  handleCloseMenu();
+                }
+              },
             }),
           )}
         </ul>
