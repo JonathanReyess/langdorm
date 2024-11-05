@@ -11,30 +11,29 @@ const ListContainer = styled.div`
   overflow-x: auto;
   padding: 20px;
   scroll-snap-type: x mandatory;
-  width: 100%; /* Make width responsive */
+  width: 100%;
   margin: 0 auto;
   &::-webkit-scrollbar {
     display: none;
   }
 
-  /* Responsiveness */
   @media (max-width: 768px) {
-    padding: 10px; /* Reduce padding for mobile */
+    padding: 10px;
   }
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin: 30px 0; /* Reduce margin for mobile */
+  margin: 30px 0;
 
   @media (max-width: 768px) {
-    margin: 20px 0; /* Further reduce margin for smaller screens */
+    margin: 20px 0;
   }
 `;
 
 const ToggleButton = styled.button`
-  width: 200px; /* Set a fixed width for consistent size on all screens */
+  width: 200px;
   padding: 8px 16px;
   font-size: 1rem;
   border: none;
@@ -52,14 +51,20 @@ const ToggleButton = styled.button`
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
-
-  /* Remove the mobile-specific width adjustment */
 `;
 
 const EventsList: React.FC = () => {
   const [showPast, setShowPast] = useState(false);
 
-  const filteredEvents = events.filter((event) => event.isPast === showPast);
+  // Filter and sort events based on the showPast state
+  const filteredEvents = events
+    .filter((event) => event.isPast === showPast)
+    .sort((a, b) => {
+      if (showPast) {
+        return new Date(b.date).getTime() - new Date(a.date).getTime(); // Descending order for past events
+      }
+      return new Date(a.date).getTime() - new Date(b.date).getTime(); // Ascending order for upcoming events
+    });
 
   return (
     <div>
