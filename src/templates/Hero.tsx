@@ -36,7 +36,8 @@ const Hero = () => (
           <div className="mt-5 flex justify-center">
             {/* Apply top margin (padding) here */}
             <Link href="https://docs.google.com/forms/d/1kQkNR2T4UdHErjTCv9neAAzSZkhpilbb3kK1Dzqfx3c">
-              <Button xl>Spring 2025 Application</Button> {/* Button with link */}
+              <Button xl>Spring 2025 Application</Button>{' '}
+              {/* Button with link */}
             </Link>
           </div>
         }
