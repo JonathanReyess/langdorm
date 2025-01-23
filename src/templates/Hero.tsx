@@ -35,8 +35,8 @@ const Hero = () => (
           // Call-to-action button wrapped in a div with margin top applied
           <div className="mt-5 flex justify-center">
             {/* Apply top margin (padding) here */}
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdlV4Rj8l-y6vwXE4XFIW4fciFAE9maPR-Yy-LM-s518dCEXw/viewform">
-              <Button xl>Rush Spring 2025</Button> {/* Button with link */}
+            <Link href="https://docs.google.com/forms/d/1kQkNR2T4UdHErjTCv9neAAzSZkhpilbb3kK1Dzqfx3c">
+              <Button xl>Spring 2025 Application</Button> {/* Button with link */}
             </Link>
           </div>
         }
