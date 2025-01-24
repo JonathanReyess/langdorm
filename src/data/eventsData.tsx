@@ -97,4 +97,15 @@ export const events: Event[] = [
     location: 'TBA',
     description: 'TBA',
   },
+  {
+    id: '6',
+    name: 'Lunar New Year',
+    date: '2025-01-25',
+    image: '/assets/lny.png',
+    isPast: isEventInPast(new Date('2025-01-25T15:00:00')),
+    startDate: new Date('2025-01-25T15:00:00'),
+    endDate: new Date('2025-01-25T18:00:00'),
+    location: 'John Hope Franklin Center',
+    description: 'Room 230',
+  },
 ];
