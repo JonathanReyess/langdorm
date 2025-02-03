@@ -1,439 +1,529 @@
 {
   "executiveMembers": [
+  {
+  "id": 1,
+  "name": "Kaitlyn Yan, President",
+  "major": "Major: Public Policy, Global Health",
+  "hometown": "Hometown: Naples, FL",
+  "languages": "Languages: Mandarin, Spanish",
+  "imageUrl": "/people/person_placeholder.png"
+  },
+  {
+  "id": 2,
+  "name": "Jadelyn Ding, Vice President",
+  "major": "Major: Biology, Evolutionary Anthropology ",
+  "hometown": "Hometown: ",
+  "languages": "Languages: Mandarin, French",
+  "imageUrl": "/people/jadelyn_ding.jpg"
+  },
+  {
+  "id": 3,
+  "name": "Jonathan Reyes, Vice President",
+  "major": "Major: CS, Neuroscience, Linguistics",
+  "hometown": "Hometown: Brooklyn, New York",
+  "languages": "Languages: Spanish, French, Mandarin, Korean",
+  "imageUrl": "/people/jonathan_reyes.jpg"
+  },
+  {
+  "id": 4,
+  "name": "Shivam Mani, Treasurer",
+  "major": "Major: Political Science, CS",
+  "hometown": "Hometown: Bay Area, CA ",
+  "languages": "Languages: Hindi, Nepali, Mandarin, Spanish",
+  "imageUrl": "/people/shivam_mani.png"
+  },
+  {
+  "id": 5,
+  "name": "Clara Sun, Communications Chair",
+  "major": "Major: Neuroscience, Visual Arts ",
+  "hometown": "Hometown: Seattle, WA",
+  "languages": "Languages: Mandarin, French",
+  "imageUrl": "/people/clara_sun.png"
+  },
+  {
+  "id": 6,
+  "name": "Claire Cullen, Social Chair",
+  "major": "Major: Linguistics, Spanish ",
+  "hometown": "Hometown: Greenville, NC ",
+  "languages": "Languages: Spanish, Korean",
+  "imageUrl": "/people/claire_cullen.jpeg"
+  },
+  {
+  "id": 7,
+  "name": "Nicole Lee Heberling, Service Chair",
+  "major": "Major: Evolutionary Anth, Biology ",
+  "hometown": "Hometown: ",
+  "languages": "Languages: French, German",
+  "imageUrl": "/people/nicole_heberling.png"
+  },
+  {
+  "id": 8,
+  "name": "Fiona Selle, Event Planner",
+  "major": "Major: BME, ME",
+  "hometown": "Hometown: Birmingham, AL",
+  "languages": "Languages: Spanish",
+  "imageUrl": "/people/person_placeholder.png"
+  },
+  {
+  "id": 9,
+  "name": "Vedant Patel, Event Planner",
+  "major": "Major: Computer Science, Biology",
+  "hometown": "Hometown: Ellicot City, MD",
+  "languages": "Languages: Spanish, Gujarati, Hindi",
+  "imageUrl": "/people/vedant_patel.jpeg"
+  },
+  {
+  "id": 10,
+  "name": "Ajani Adovor, Event Planner",
+  "major": "Major: Program II",
+  "hometown": "Hometown: Philadelphia, PA",
+  "languages": "Languages: French, Japanese",
+  "imageUrl": "/people/ajani_adovor.jpeg"
+  }
+  ],
+  
+  "classesData": {
+  "2025": [
+  {
+  "id": 1,
+  "name": "Dasol Lee",
+  "major": "Major: Computer Science, Psychology ",
+  "hometown": "Hometown: Blacksburg, VA ",
+  "languages": "Languages: Korean",
+  "imageUrl": "/people/dasol_lee.png"
+  },
+  {
+  "id": 2,
+  "name": "Emily Shao",
+  "major": "Major: ECE/CS ",
+  "hometown": "Hometown: Chicago, IL",
+  "languages": "Languages: Mandarin, Spanish",
+  "imageUrl": "/people/emily_shao.png"
+  },
+  {
+  "id": 3,
+  "name": "Emily Sun",
+  "major": "Major: Computer Science, Statistics",
+  "hometown": "Hometown: Memphis, Tennesee ",
+  "languages": "Languages: Mandarin, French",
+  "imageUrl": "/people/person_placeholder.png"
+  },
+  {
+  "id": 4,
+  "name": "Kulsoom Rizavi",
+  "major": "Major: Political Science, Computer Science",
+  "hometown": "Hometown: Lucknow, India",
+  "languages": "Languages: Hindi, Urdu, French",
+  "imageUrl": "/people/kulsoom_rizavi.jpg"
+  },
+  {
+  "id": 5,
+  "name": "Liuren Yin",
+  "major": "Major: ECE, Visual Media",
+  "hometown": "Hometown: Beijing, China",
+  "languages": "Languages: Mandarin",
+  "imageUrl": "/people/liuren_yin.jpg"
+  },
+  {
+  "id": 6,
+  "name": "Lyndrinn Yao",
+  "major": "Major: Computer Science",
+  "hometown": "Hometown: Virginia",
+  "languages": "Languages: Mandarin",
+  "imageUrl": "/people/lyndrinn_yao.jpeg"
+  },
+  {
+  "id": 7,
+  "name": "Marisol Nevarez",
+  "major": "Major: Computer Science ",
+  "hometown": "Hometown: Glendale, AZ",
+  "languages": "Languages: Spanish",
+  "imageUrl": "/people/person_placeholder.png"
+  },
+  {
+  "id": 8,
+  "name": "Sara Goh",
+  "major": "Major: Environmental Science, Psychology ",
+  "hometown": "Hometown: Singapore",
+  "languages": "Languages: Japanese",
+  "imageUrl": "/people/sarah_goh.JPG"
+  },
+  {
+  "id": 9,
+  "name": "Sophia Li",
+  "major": "Major: Neuroscience ",
+  "hometown": "Hometown: Toronto, Canada",
+  "languages": "Languages: Mandarin, French",
+  "imageUrl": "/people/sophia_li.jpeg"
+  }
+  ],
+  "2026": [
     {
       "id": 1,
-      "name": "Kaitlyn Yan, President",
-      "major": "Major: Public Policy, Global Health",
-      "hometown": "Hometown: Naples, FL",
+      "name": "Alyssa Gorbaneva",
+      "major": "Major: Computer Science, Mathematics",
+      "hometown": "Hometown: Washington D.C. ",
+      "languages": "Languages: Russian, Japanese",
+      "imageUrl": "/people/person_placeholder.png"
+    },
+    {
+      "id": 3,
+      "name": "Angelli Garibaldi",
+      "major": "Major: English, Spanish ",
+      "hometown": "Hometown: Peru ",
+      "languages": "Languages: Spanish, Italian",
+      "imageUrl": "/people/angelli_garibaldi.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Catherine Pyne",
+      "major": "Major: Biology ",
+      "hometown": "Hometown: New York, NY ",
+      "languages": "Languages: Latin, Greek, French",
+      "imageUrl": "/people/catherine_pyne.png"
+    },
+    {
+      "id": 5,
+      "name": "Elena Suarez",
+      "major": "Major: Psychology, Spanish ",
+      "hometown": "Hometown: Wake Forest, NC",
+      "languages": "Languages: Spanish",
+      "imageUrl": "/people/elena_suarez.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Eric Wang",
+      "major": "Major: Chemistry, Music",
+      "hometown": "Hometown: San Diego, CA ",
+      "languages": "Languages: Mandarin, Cantonese",
+      "imageUrl": "/people/eric_wang.png"
+    },
+    {
+      "id": 7,
+      "name": "Erica Shen",
+      "major": "Major: Computer Science ",
+      "hometown": "Hometown: ",
+      "languages": "Languages: Mandarin, French",
+      "imageUrl": "/people/person_placeholder.png"
+    },
+    {
+      "id": 8,
+      "name": "Grace Richardson",
+      "major": "Major: Neuroscience, Spanish",
+      "hometown": "Hometown: Minneapolis, Minnesota",
+      "languages": "Languages: Spanish",
+      "imageUrl": "/people/grace_richardson.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Hannah Hortman",
+      "major": "Major: Neuroscience, Chinese",
+      "hometown": "Hometown: ",
+      "languages": "Languages: Mandarin",
+      "imageUrl": "/people/hannah_hortman.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Katherine Chen",
+      "major": "Major: Computational Media ",
+      "hometown": "Hometown: ",
+      "languages": "Languages: Mandarin",
+      "imageUrl": "/people/person_placeholder.png"
+    },
+    {
+      "id": 12,
+      "name": "Sarah Gorbatov",
+      "major": "Major: ",
+      "hometown": "Hometown: ",
+      "languages": "Languages:",
+      "imageUrl": "/people/person_placeholder.png"
+    },
+    {
+      "id": 13,
+      "name": "Shelby Hartman",
+      "major": "Major: ",
+      "hometown": "Hometown: ",
+      "languages": "Languages: French",
+      "imageUrl": "/people/person_placeholder.png"
+    },
+    {
+      "id": 14,
+      "name": "William Chen",
+      "major": "Major: Math, CS ",
+      "hometown": "Hometown: Franklinton, NC",
+      "languages": "Languages: Mandarin",
+      "imageUrl": "/people/william_chen.png"
+    },
+    {
+      "id": 15,
+      "name": "Yanlin Li",
+      "major": "Major: Economics, Psychology ",
+      "hometown": "Hometown: Shaghai, China",
+      "languages": "Languages: Mandarin, Arabic",
+      "imageUrl": "/people/yanlin_li.png"
+    }
+  ],
+  "2027": [
+    {
+      "id": 1,
+      "name": "Adelle Yong",
+      "major": "Major: Biology",
+      "hometown": "Hometown: Austin, Texas",
+      "languages": "Languages: Mandarin, French",
+      "imageUrl": "/people/adelle_yong.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Amy Xu",
+      "major": "Major: Statistics, CS ",
+      "hometown": "Hometown: Tennesee",
+      "languages": "Languages: Mandarin, French",
+      "imageUrl": "/people/amy_xu.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Antonio Drakes",
+      "major": "Major: CS + Economics, Math ",
+      "hometown": "Hometown: New Jersey",
+      "languages": "Languages: Spanish",
+      "imageUrl": "/people/person_placeholder.png"
+    },
+    {
+      "id": 4,
+      "name": "Athena Aloupis",
+      "major": "Major: AMES ",
+      "hometown": "Hometown: Cambridge, MA",
+      "languages": "Languages: Mandarin",
+      "imageUrl": "/people/athena_aloupis.png"
+    },
+    {
+      "id": 5,
+      "name": "Clarence Soh",
+      "major": "Major: Mechanical Engineering ",
+      "hometown": "Hometown: Singapore",
+      "languages": "Languages: Mandarin, Malay",
+      "imageUrl": "/people/clarence_soh.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Cynthia Ding",
+      "major": "Major: Neuroscience, CS",
+      "hometown": "Hometown: Toronto, CN",
+      "languages": "Languages: Mandarin, French",
+      "imageUrl": "/people/person_placeholder.png"
+    },
+    {
+      "id": 7,
+      "name": "Darsh Mandera",
+      "major": "Major: Linguistics, Computer Science",
+      "hometown": "Hometown: Portland, OR",
+      "languages": "Languages: Gujarati, Spanish, Hindi",
+      "imageUrl": "/people/darsh_mandera.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Hyunjin Lee",
+      "major": "Major: Statistics, Pre-Med",
+      "hometown": "Hometown: New York",
+      "languages": "Languages: Korean, French",
+      "imageUrl": "/people/person_placeholder.png"
+    },
+    {
+      "id": 9,
+      "name": "Jamie Tan",
+      "major": "Major: Math",
+      "hometown": "Hometown: Bay Area, CA",
+      "languages": "Languages: Mandarin, French",
+      "imageUrl": "/people/jamie_tan.png"
+    },
+    {
+      "id": 10,
+      "name": "Jenni Wang",
+      "major": "Major: Biomedical Engineering ",
+      "hometown": "Hometown: State College, PA ",
       "languages": "Languages: Mandarin, Spanish",
+      "imageUrl": "/people/jenni_wang.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Johanna Murphy",
+      "major": "Major: Undecided",
+      "hometown": "Hometown: New Jersey ",
+      "languages": "Languages: Spanish",
+      "imageUrl": "/people/johanna_murphy.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Larkin Woodard",
+      "major": "Major: Spanish, Neuroscience",
+      "hometown": "Hometown: Cary, NC ",
+      "languages": "Languages: Spanish",
+      "imageUrl": "/people/larkin_woodard.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "Liane Ma",
+      "major": "Major: Statistics, Computer Science ",
+      "hometown": "Hometown: Cary, NC ",
+      "languages": "Languages: Mandarin",
+      "imageUrl": "/people/liane_ma.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "Lucas Ma",
+      "major": "Major: Math, CS",
+      "hometown": "Hometown: Nanjing, China",
+      "languages": "Languages: Mandarin, French",
+      "imageUrl": "/people/lucas_ma.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Mark Gikas",
+      "major": "Major: Economics, CS ",
+      "hometown": "Hometown: Hong Kong ",
+      "languages": "Languages: Mandarin",
+      "imageUrl": "/people/mark_gikas.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "Rodney Willoughby",
+      "major": "Major: ECE, Chinese",
+      "hometown": "Hometown: Milwaukee, WI",
+      "languages": "Languages: Mandarin, Portuguese",
+      "imageUrl": "/people/rodney_willoughby.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Tanya Pan",
+      "major": "Major: Physics",
+      "hometown": "Hometown: Heidelberg, Germany",
+      "languages": "Languages: Mandarin, German, French",
+      "imageUrl": "/people/tanya_pan.png"
+    },
+    {
+      "id": 18,
+      "name": "Tiffany Chen",
+      "major": "Major: Biology, Evolutionary Anth ",
+      "hometown": "Hometown: State College, PA",
+      "languages": "Languages: Mandarin",
+      "imageUrl": "/people/tiffany_chen.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "Vickie Kim",
+      "major": "Major: Neuroscience, Marine Science",
+      "hometown": "Hometown: Alabama",
+      "languages": "Languages: Korean, Mandarin",
+      "imageUrl": "/people/person_placeholder.png"
+    },
+    {
+      "id": 20,
+      "name": "Yoojin Park",
+      "major": "Major: Biology, Statistics ",
+      "hometown": "Hometown: Nashville, TN ",
+      "languages": "Languages: Korean, Mandarin",
+      "imageUrl": "/people/yoojin_park.jpg"
+    }
+  ],
+  "2028": [
+    {
+      "id": 1,
+      "name": "Amelia Barr",
+      "major": "Major: ICS, French, Chinese",
+      "hometown": "Hometown: Chattanooga, TN ",
+      "languages": "Languages: French, Mandarin",
       "imageUrl": "/people/person_placeholder.png"
     },
     {
       "id": 2,
-      "name": "Jadelyn Ding, Vice President",
-      "major": "Major: Biology, Evolutionary Anthropology ",
-      "hometown": "Hometown: ",
-      "languages": "Languages: Mandarin, French",
-      "imageUrl": "/people/jadelyn_ding.jpg"
+      "name": "Amylyn De Paz-De Paz",
+      "major": "Major: Undecided",
+      "hometown": "Hometown: North Carolina",
+      "languages": "Languages: Spanish",
+      "imageUrl": "/people/person_placeholder.png"
     },
+  
     {
       "id": 3,
-      "name": "Jonathan Reyes, Vice President",
-      "major": "Major: CS, Neuroscience, Linguistics",
-      "hometown": "Hometown: Brooklyn, New York",
-      "languages": "Languages: Spanish, French, Mandarin, Korean",
-      "imageUrl": "/people/jonathan_reyes.jpg"
+      "name": "Andrew Albright ",
+      "major": "Major: Biology",
+      "hometown": "Hometown: Atlanta, GA",
+      "languages": "Languages: Latin",
+      "imageUrl": "/people/andrew_albright.jpeg"
     },
     {
       "id": 4,
-      "name": "Shivam Mani, Treasurer",
-      "major": "Major: Political Science, CS",
-      "hometown": "Hometown: Bay Area, CA ",
-      "languages": "Languages: Hindi, Nepali, Mandarin, Spanish",
-      "imageUrl": "/people/shivam_mani.png"
+      "name": "Claire Hong",
+      "major": "Major: Chemistry, Psychology",
+      "hometown": "Hometown: Ohio",
+      "languages": "Languages: Chinese, Spanish",
+      "imageUrl": "/people/person_placeholder.png"
     },
     {
       "id": 5,
-      "name": "Clara Sun, Communications Chair",
-      "major": "Major: Neuroscience, Visual Arts ",
-      "hometown": "Hometown: Seattle, WA",
-      "languages": "Languages: Mandarin, French",
-      "imageUrl": "/people/clara_sun.png"
+      "name": "Harvyn Lim",
+      "major": "Major: Biomedical Engineering",
+      "hometown": "Hometown: Charlotte, NC",
+      "languages": "Languages: Korean",
+      "imageUrl": "/people/person_placeholder.png"
     },
     {
       "id": 6,
-      "name": "Claire Cullen, Social Chair",
-      "major": "Major: Linguistics, Spanish ",
-      "hometown": "Hometown: Greenville, NC ",
-      "languages": "Languages: Spanish, Korean",
-      "imageUrl": "/people/claire_cullen.jpeg"
+      "name": "Isabella Benz",
+      "major": "Major: BME, Pre-Med",
+      "hometown": "Hometown: Myrtle Beach, SC",
+      "languages": "Languages: Mandarin",
+      "imageUrl": "/people/person_placeholder.png"
     },
     {
       "id": 7,
-      "name": "Nicole Lee Heberling, Service Chair",
-      "major": "Major: Evolutionary Anth, Biology ",
-      "hometown": "Hometown: ",
-      "languages": "Languages: French, German",
-      "imageUrl": "/people/nicole_heberling.png"
+      "name": "Jeremy Li",
+      "major": "Major: Neuroscience, Pre-Med",
+      "hometown": "Hometown: Evansville, IN ",
+      "languages": "Languages: Mandarin, Spanish",
+      "imageUrl": "/people/person_placeholder.png"
     },
     {
       "id": 8,
-      "name": "Fiona Selle, Event Planner",
-      "major": "Major: BME, ME",
-      "hometown": "Hometown: Birmingham, AL",
+      "name": "Jordy Alvarado",
+      "major": "Major: Biology, Health Policy",
+      "hometown": "Hometown: Spartanburg, South Carolina",
       "languages": "Languages: Spanish",
       "imageUrl": "/people/person_placeholder.png"
     },
     {
       "id": 9,
-      "name": "Vedant Patel, Event Planner",
-      "major": "Major: Computer Science, Biology",
-      "hometown": "Hometown: Ellicot City, MD",
-      "languages": "Languages: Spanish, Gujarati, Hindi",
-      "imageUrl": "/people/vedant_patel.jpeg"
+      "name": "Nevaeh Vazquez",
+      "major": "Major: Biology, Neuroscience",
+      "hometown": "Hometown: Jersey Shore, NJ",
+      "languages": "Languages: ASL",
+      "imageUrl": "/people/person_placeholder.png"
     },
+  
     {
       "id": 10,
-      "name": "Ajani Adovor, Event Planner",
-      "major": "Major: Program II",
-      "hometown": "Hometown: Philadelphia, PA",
-      "languages": "Languages: French, Japanese",
-      "imageUrl": "/people/ajani_adovor.jpeg"
+      "name": "Priya Ghanta",
+      "major": "Major: Biology, Music",
+      "hometown": "Hometown: Miami, FL",
+      "languages": "Languages: Spanish, Hindi",
+      "imageUrl": "/people/priya_ghanta.JPG"
+    },
+    {
+      "id": 11,
+      "name": "Søren Gillette",
+      "major": "Major: Undecided",
+      "hometown": "Hometown: Portland, OR",
+      "languages": "Languages: Mandarin, French, Spanish",
+      "imageUrl": "/people/person_placeholder.png"
+    },
+    {
+      "id": 12,
+      "name": "Zulaa Mungunsukh",
+      "major": "Major: Civil Engineering, Architectural Eng. ",
+      "hometown": "Hometown: Ulaanbaatar, Mongolia",
+      "languages": "Languages: Mongolian",
+      "imageUrl": "/people/person_placeholder.png"
     }
-  ],
-
-  "classesData": {
-    "2025": [
-      {
-        "id": 1,
-        "name": "Dasol Lee",
-        "major": "Major: Computer Science, Psychology ",
-        "hometown": "Hometown: Blacksburg, VA ",
-        "languages": "Languages: Korean",
-        "imageUrl": "/people/dasol_lee.png"
-      },
-      {
-        "id": 2,
-        "name": "Emily Shao",
-        "major": "Major: ECE/CS ",
-        "hometown": "Hometown: Chicago, IL",
-        "languages": "Languages: Mandarin, Spanish",
-        "imageUrl": "/people/emily_shao.png"
-      },
-      {
-        "id": 3,
-        "name": "Emily Sun",
-        "major": "Major: Computer Science, Statistics",
-        "hometown": "Hometown: Memphis, Tennesee ",
-        "languages": "Languages: Mandarin, French",
-        "imageUrl": "/people/person_placeholder.png"
-      },
-      {
-        "id": 4,
-        "name": "Kulsoom Rizavi",
-        "major": "Major: Political Science, Computer Science",
-        "hometown": "Hometown: Lucknow, India",
-        "languages": "Languages: Hindi, Urdu, French",
-        "imageUrl": "/people/kulsoom_rizavi.jpg"
-      },
-      {
-        "id": 5,
-        "name": "Liuren Yin",
-        "major": "Major: ECE, Visual Media",
-        "hometown": "Hometown: Beijing, China",
-        "languages": "Languages: Mandarin",
-        "imageUrl": "/people/liuren_yin.jpg"
-      },
-      {
-        "id": 6,
-        "name": "Lyndrinn Yao",
-        "major": "Major: Computer Science",
-        "hometown": "Hometown: Virginia",
-        "languages": "Languages: Mandarin",
-        "imageUrl": "/people/lyndrinn_yao.jpeg"
-      },
-      {
-        "id": 7,
-        "name": "Sara Goh",
-        "major": "Major: Environmental Science, Psychology ",
-        "hometown": "Hometown: Singapore",
-        "languages": "Languages: Japanese",
-        "imageUrl": "/people/sarah_goh.JPG"
-      },
-      {
-        "id": 8,
-        "name": "Sophia Li",
-        "major": "Major: Neuroscience ",
-        "hometown": "Hometown: Toronto, Canada",
-        "languages": "Languages: Mandarin, French",
-        "imageUrl": "/people/sophia_li.jpeg"
-      },
-      {
-        "id": 9,
-        "name": "Valerie Tan",
-        "major": "Major: ",
-        "hometown": "Hometown: ",
-        "languages": "Languages: ",
-        "imageUrl": "/people/person_placeholder.png"
-      },
-      {
-        "id": 10,
-        "name": "Zoey Chen",
-        "major": "Major: Computational Media, Chinese",
-        "hometown": "Hometown: ",
-        "languages": "Languages:  Mandarin, Indonesian",
-        "imageUrl": "/people/person_placeholder.png"
-      }
-    ],
-    "2026": [
-      {
-        "id": 1,
-        "name": "Alyssa Gorbaneva",
-        "major": "Major: Computer Science, Mathematics",
-        "hometown": "Hometown: Washington D.C. ",
-        "languages": "Languages: Russian, Japanese",
-        "imageUrl": "/people/person_placeholder.png"
-      },
-      {
-        "id": 2,
-        "name": "Ananya Agrawal",
-        "major": "Major: ",
-        "hometown": "Hometown: ",
-        "languages": "Languages:",
-        "imageUrl": "/people/person_placeholder.png"
-      },
-      {
-        "id": 3,
-        "name": "Angelli Garibaldi",
-        "major": "Major: English, Spanish ",
-        "hometown": "Hometown: Peru ",
-        "languages": "Languages: Spanish, Italian",
-        "imageUrl": "/people/angelli_garibaldi.jpeg"
-      },
-      {
-        "id": 4,
-        "name": "Catherine Pyne",
-        "major": "Major: Biology ",
-        "hometown": "Hometown: New York, NY ",
-        "languages": "Languages: Latin, Greek, French",
-        "imageUrl": "/people/catherine_pyne.png"
-      },
-      {
-        "id": 5,
-        "name": "Elena Suarez",
-        "major": "Major: Psychology, Spanish ",
-        "hometown": "Hometown: Wake Forest, NC",
-        "languages": "Languages: Spanish",
-        "imageUrl": "/people/elena_suarez.jpg"
-      },
-      {
-        "id": 6,
-        "name": "Eric Wang",
-        "major": "Major: Chemistry, Music",
-        "hometown": "Hometown: San Diego, CA ",
-        "languages": "Languages: Mandarin, Cantonese",
-        "imageUrl": "/people/eric_wang.png"
-      },
-      {
-        "id": 7,
-        "name": "Erica Shen",
-        "major": "Major: Computer Science ",
-        "hometown": "Hometown: ",
-        "languages": "Languages: Mandarin, French",
-        "imageUrl": "/people/person_placeholder.png"
-      },
-      {
-        "id": 8,
-        "name": "Grace Richardson",
-        "major": "Major: Neuroscience, Spanish",
-        "hometown": "Hometown: Minneapolis, Minnesota",
-        "languages": "Languages: Spanish",
-        "imageUrl": "/people/grace_richardson.jpg"
-      },
-      {
-        "id": 9,
-        "name": "Hannah Hortman",
-        "major": "Major: Neuroscience, Chinese",
-        "hometown": "Hometown: ",
-        "languages": "Languages: Mandarin",
-        "imageUrl": "/people/hannah_hortman.jpg"
-      },
-      {
-        "id": 10,
-        "name": "Katherine Chen",
-        "major": "Major: Computational Media ",
-        "hometown": "Hometown: ",
-        "languages": "Languages: Mandarin",
-        "imageUrl": "/people/person_placeholder.png"
-      },
-      {
-        "id": 11,
-        "name": "Montana Lee",
-        "major": "Major: Math, Decision Sciences",
-        "hometown": "Hometown: New York, NY",
-        "languages": "Languages: French",
-        "imageUrl": "/people/person_placeholder.png"
-      },
-      {
-        "id": 12,
-        "name": "Sarah Gorbatov",
-        "major": "Major: ",
-        "hometown": "Hometown: ",
-        "languages": "Languages:",
-        "imageUrl": "/people/person_placeholder.png"
-      },
-      {
-        "id": 13,
-        "name": "Shelby Hartman",
-        "major": "Major: ",
-        "hometown": "Hometown: ",
-        "languages": "Languages: French",
-        "imageUrl": "/people/person_placeholder.png"
-      },
-      {
-        "id": 14,
-        "name": "William Chen",
-        "major": "Major: Math, CS ",
-        "hometown": "Hometown: Franklinton, NC",
-        "languages": "Languages: Mandarin",
-        "imageUrl": "/people/william_chen.png"
-      },
-      {
-        "id": 15,
-        "name": "Yanlin Li",
-        "major": "Major: Economics, Psychology ",
-        "hometown": "Hometown: Shaghai, China",
-        "languages": "Languages: Mandarin, Arabic",
-        "imageUrl": "/people/yanlin_li.png"
-      }
-    ],
-    "2027": [
-      {
-        "id": 1,
-        "name": "Adelle Yong",
-        "major": "Major: Biology",
-        "hometown": "Hometown: Austin, Texas",
-        "languages": "Languages: Mandarin, French",
-        "imageUrl": "/people/adelle_yong.jpeg"
-      },
-      {
-        "id": 2,
-        "name": "Amy Xu",
-        "major": "Major: Statistics, CS ",
-        "hometown": "Hometown: Tennesee",
-        "languages": "Languages: Mandarin, French",
-        "imageUrl": "/people/amy_xu.jpeg"
-      },
-      {
-        "id": 3,
-        "name": "Athena Aloupis",
-        "major": "Major: AMES ",
-        "hometown": "Hometown: Cambridge, MA",
-        "languages": "Languages: Mandarin",
-        "imageUrl": "/people/athena_aloupis.png"
-      },
-      {
-        "id": 4,
-        "name": "Clarence Soh",
-        "major": "Major: Mechanical Engineering ",
-        "hometown": "Hometown: Singapore",
-        "languages": "Languages: Mandarin, Malay",
-        "imageUrl": "/people/clarence_soh.jpg"
-      },
-      {
-        "id": 5,
-        "name": "Darsh Mandera",
-        "major": "Major: Linguistics, Computer Science",
-        "hometown": "Hometown: Portland, OR",
-        "languages": "Languages: Gujarati, Spanish, Hindi",
-        "imageUrl": "/people/darsh_mandera.jpeg"
-      },
-      {
-        "id": 6,
-        "name": "Jamie Tan",
-        "major": "Major: Math",
-        "hometown": "Hometown: Bay Area, CA",
-        "languages": "Languages: Mandarin, French",
-        "imageUrl": "/people/jamie_tan.png"
-      },
-      {
-        "id": 7,
-        "name": "Jenni Wang",
-        "major": "Major: Biomedical Engineering ",
-        "hometown": "Hometown: State College, PA ",
-        "languages": "Languages: Mandarin, Spanish",
-        "imageUrl": "/people/jenni_wang.jpg"
-      },
-      {
-        "id": 8,
-        "name": "Johanna Murphy",
-        "major": "Major: Undecided",
-        "hometown": "Hometown: New Jersey ",
-        "languages": "Languages: Spanish",
-        "imageUrl": "/people/johanna_murphy.jpeg"
-      },
-      {
-        "id": 9,
-        "name": "Larkin Woodard",
-        "major": "Major: Spanish, Neuroscience",
-        "hometown": "Hometown: Cary, NC ",
-        "languages": "Languages: Spanish",
-        "imageUrl": "/people/larkin_woodard.jpeg"
-      },
-      {
-        "id": 10,
-        "name": "Liane Ma",
-        "major": "Major: Statistics, Computer Science ",
-        "hometown": "Hometown: Cary, NC ",
-        "languages": "Languages: Mandarin",
-        "imageUrl": "/people/liane_ma.jpeg"
-      },
-      {
-        "id": 11,
-        "name": "Lucas Ma",
-        "major": "Major: Math, CS",
-        "hometown": "Hometown: Nanjing, China",
-        "languages": "Languages: Mandarin, French",
-        "imageUrl": "/people/lucas_ma.jpg"
-      },
-      {
-        "id": 12,
-        "name": "Mark Gikas",
-        "major": "Major: Economics, CS ",
-        "hometown": "Hometown: Hong Kong ",
-        "languages": "Languages: Mandarin",
-        "imageUrl": "/people/mark_gikas.jpeg"
-      },
-      {
-        "id": 13,
-        "name": "Rodney Willoughby",
-        "major": "Major: ECE, Chinese",
-        "hometown": "Hometown: Milwaukee, WI",
-        "languages": "Languages: Mandarin, Portuguese",
-        "imageUrl": "/people/rodney_willoughby.jpg"
-      },
-      {
-        "id": 14,
-        "name": "Tanya Pan",
-        "major": "Major: Physics",
-        "hometown": "Hometown: Heidelberg, Germany",
-        "languages": "Languages: Mandarin, German, French",
-        "imageUrl": "/people/tanya_pan.png"
-      },
-      {
-        "id": 15,
-        "name": "Tiffany Chen",
-        "major": "Major: Biology, Evolutionary Anth ",
-        "hometown": "Hometown: State College, PA",
-        "languages": "Languages: Mandarin",
-        "imageUrl": "/people/tiffany_chen.jpeg"
-      },
-      {
-        "id": 16,
-        "name": "Yoojin Park",
-        "major": "Major: Biology, Statistics ",
-        "hometown": "Hometown: Nashville, TN ",
-        "languages": "Languages: Korean, Mandarin",
-        "imageUrl": "/people/yoojin_park.jpg"
-      }
-    ],
-    "2028": [
-      {
-        "id": 1,
-        "name": "Andrew Albright ",
-        "major": "Major: Biology",
-        "hometown": "Hometown: Atlanta, GA",
-        "languages": "Languages: Latin",
-        "imageUrl": "/people/andrew_albright.jpeg"
-      },
-      {
-        "id": 2,
-        "name": "Priya Ghanta",
-        "major": "Major: Biology, Music",
-        "hometown": "Hometown: Miami, FL",
-        "languages": "Languages: Spanish, Hindi",
-        "imageUrl": "/people/priya_ghanta.JPG"
-      }
-    ]
+  ]
   }
-}
+  }
