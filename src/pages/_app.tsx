@@ -38,7 +38,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://langdorm.org/" />
-      <meta property="og:image" content="/assets/langdorm-solid-bg.png" />
+      <meta property="og:image" content="" />
       <meta name="robots" content="index, follow" />
     </Head>
 
