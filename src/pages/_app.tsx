@@ -21,17 +21,22 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       {/* Section for the Navigation Bar */}
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo xl />}>
-          <li>
+          <li className="sm:mr-5">
             <Link href="/#about" className="nav-link about-link">
               About
             </Link>
           </li>
-          <li>
+          <li className="sm:mr-5">
             <DropdownMenu />
           </li>
-          <li>
+          <li className="sm:mr-5">
             <Link href="/events" className="nav-link events-link">
               Events
+            </Link>
+          </li>
+          <li className="sm:ml-5">
+            <Link href="/contact" className="nav-link contact-link">
+              Contact
             </Link>
           </li>
         </NavbarTwoColumns>

@@ -1,7 +1,5 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
 
 html {
@@ -21,7 +19,34 @@ html {
   color: #c4b5fd; /* Color for Events link on hover */
 }
 
+.contact-link:hover {
+  color: #c4b5fd; /* Color for Events link on hover */
+}
+
 .dx-scheduler-appointment {
   background-color: yellow !important; /* Change to your desired color */
   color: black !important; /* Change text color if needed */
 }
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px; /* Match the height of your button */
+  width: 100%;  /* Ensure it fills the button area */
+}
+
+.spinner {
+  border: 4px solid #f3f3f3; /* Light grey background */
+  border-top: 4px solid #3498db; /* Blue color for spinner */
+  border-radius: 50%;
+  width: 24px; /* Smaller size */
+  height: 24px; /* Smaller size */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

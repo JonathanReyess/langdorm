@@ -16,19 +16,34 @@ const Hero = () => (
       <HeroOneButton
         title={
           // Custom title with an image wrapped in a div
-          <div className="flex items-center justify-center">
-            <img
-              src="assets/langdorm-logo-variant.png" // Image source
-              alt="LangDorm Logo" // Alternative text for accessibility
-              className="object-none" // CSS class for image styling
-              style={{
-                height: '410px',
-                width: '400px',
-                marginLeft: '0px',
-                marginRight: '17px',
-              }} // Inline style for image dimensions
-            />
-          </div>
+<div className="flex items-center justify-center">
+  <video
+    autoPlay
+    muted
+    className="object-none"
+    style={{
+      height: '550px',
+      width: '650px',
+      marginLeft: '0px',
+      marginRight: '17px',
+      marginTop: '0px',
+      marginBottom: '10px',
+      border: 'none', // Remove any border
+      outline: 'none', // Remove any outline
+      boxShadow: 'none', // Remove any shadow that might look like a border
+      display: 'block', // Ensures the video behaves like a block element (no extra space)
+      clipPath: 'inset(1px 1px)', // Applying clip-path to the video
+    }}
+    onFocus={(e) => {
+      e.target.style.outline = 'none'; // Remove focus outline
+      e.target.style.boxShadow = 'none'; // Remove any focus box shadow
+    }}
+  >
+    <source src="assets/langdorm_animated.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
         }
         description="Living Learning Community @ Duke University" // Description text
         button={
