@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 // Importing AppProps type from 'next/app' package
 import type { AppProps } from 'next/app';
 import Link from 'next/link';
+import Script from 'next/script';
 
 import { Background } from '../components/background/Background';
 // Import the necessary components for the navigation bar
@@ -17,6 +18,11 @@ import { Logo } from '../templates/Logo';
 // Define the MyApp component to include the navigation bar and analytics
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
+    <Script
+      src={`https://www.google.com/recaptcha/api.js?render=6LfFaNwqAAAAAJ91c_elIfJoHU2nRmY3YrZeQbUB`}
+      async
+      defer
+    />
     <Background color="">
       {/* Section for the Navigation Bar */}
       <Section yPadding="py-6">

@@ -50,3 +50,17 @@ html {
   100% { transform: rotate(360deg); }
 }
 
+.recaptcha-container {
+  display: flex;
+  justify-content: center;  /* Center the reCAPTCHA box horizontally */
+  align-items: center;      /* Center the reCAPTCHA box vertically */
+  max-width: 0px;         /* Limit the size */
+  margin: 30px auto 0;      /* Center the container and add top margin */
+  transform: scale(0.75);   /* Resize the reCAPTCHA box */
+  transform-origin: 0 0;    /* Ensure scaling starts from the top-left corner */
+}
+
+.recaptcha-container iframe {
+  transform: scale(1);      /* Remove scaling effects from the iframe itself */
+}
+

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 interface FormData {
   name: string;
   email: string;
   message: string;
+  recaptchaToken: string;
 }
 
 interface Errors {
@@ -13,18 +15,19 @@ interface Errors {
 }
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState<Omit<FormData, 'recaptchaToken'>>({
     name: '',
     email: '',
     message: '',
   });
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
   const [errors, setErrors] = useState<Errors>({
     name: '',
     email: '',
     message: '',
   });
   const [status, setStatus] = useState<string>('');
-  const [loading, setLoading] = useState<boolean>(false); // Added loading state
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -35,7 +38,6 @@ const Contact: React.FC = () => {
       [name]: value,
     });
 
-    // Reset status and errors when the user changes the form
     setStatus('');
     setErrors({
       name: '',
@@ -47,7 +49,6 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Simple validation
     const newErrors: Errors = {
       name: formData.name ? '' : 'Name is required.',
       email:
@@ -59,29 +60,35 @@ const Contact: React.FC = () => {
 
     setErrors(newErrors);
 
-    // If no errors, send the form data to the backend
+    if (!recaptchaToken) {
+      setStatus('Please complete the reCAPTCHA verification.');
+      return;
+    }
+
     if (!newErrors.name && !newErrors.email && !newErrors.message) {
-      setLoading(true); // Start loading when form is submitted
+      setLoading(true);
+      const requestBody = { ...formData, recaptchaToken };
+
       try {
         const response = await fetch('/api/submit_form', {
-          // Update to use Next.js API route
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify(requestBody),
         });
 
         if (response.ok) {
           setStatus('Form submitted successfully!');
-          setFormData({ name: '', email: '', message: '' }); // Reset form data
+          setFormData({ name: '', email: '', message: '' });
+          setRecaptchaToken(null);
         } else {
           setStatus('Error submitting form. Please try again.');
         }
       } catch (error) {
         setStatus('Error submitting form. Please try again.');
       } finally {
-        setLoading(false); // Stop loading after request is finished
+        setLoading(false);
       }
     }
   };
@@ -140,20 +147,24 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="text-center">
-          {loading ? (
-            <div className="spinner-container">
-              <span className="spinner"></span> {/* Spinner component */}
-            </div>
-          ) : (
-            <button
-              type="submit"
-              className="rounded-md bg-primary-500 px-4 py-2 text-white hover:bg-primary-400"
-              disabled={loading} // Disable button while loading
-            >
-              Submit
-            </button>
-          )}
+          <div className="recaptcha-container">
+            <ReCAPTCHA
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string}
+              onChange={(token: string | null) => setRecaptchaToken(token)}
+            />
+          </div>
         </div>
+
+        <div className="text-center">
+          <button
+            type="submit"
+            className="rounded-md bg-primary-500 px-4 py-2 text-white hover:bg-primary-400"
+            disabled={loading}
+          >
+            {loading ? 'Submitting...' : 'Submit'}
+          </button>
+        </div>
+
         {status && <p className="mt-4 text-center">{status}</p>}
       </form>
     </div>
