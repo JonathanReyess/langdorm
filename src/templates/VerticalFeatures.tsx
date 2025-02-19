@@ -29,7 +29,7 @@ const images = [
 const VerticalFeatures = () => (
   <Section
     title="Who are we?"
-    description="We're a diverse community of 35+ members encompassing speakers of Arabic, Chinese, French, German, Hindi, Italian, Japanese, Korean, Spanish, and many more languages."
+    description="We're a diverse community of 50+ members encompassing speakers of Arabic, Chinese, French, German, Hindi, Italian, Japanese, Korean, Spanish, and many more languages."
     id="about"
   >
     {/* Center the image */}

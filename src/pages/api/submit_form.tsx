@@ -45,7 +45,7 @@ export default async function handler(
 
     const mailOptions = {
       from: email,
-      to: 'xd51@duke.edu',
+      to: 'kaitlyn.yan@duke.edu',
       subject: 'New LangDorm Website Contact Form Submission',
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
