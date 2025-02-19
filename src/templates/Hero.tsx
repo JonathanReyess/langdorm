@@ -17,30 +17,29 @@ const Hero = () => (
         title={
           // Custom title with an image wrapped in a div
           <div className="flex items-center justify-center">
-          <video
-            autoPlay
-            muted
-            playsInline
-            preload="auto"
-            className="object-none"
-            style={{
-              height: '550px',
-              width: '650px',
-              marginLeft: '0px',
-              marginRight: '17px',
-              marginTop: '0px',
-              marginBottom: '10px',
-              border: 'none', 
-              outline: 'none', 
-              boxShadow: 'none', 
-              display: 'block', 
-              clipPath: 'inset(1px 1px)',
-            }}
-          >
-            <source src="assets/langdorm_animated.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
+            <video
+              autoPlay
+              muted
+              playsInline
+              preload="auto"
+              className="object-none"
+              style={{
+                height: '550px',
+                width: '650px',
+                marginLeft: '0px',
+                marginRight: '17px',
+                marginTop: '0px',
+                marginBottom: '10px',
+                border: 'none',
+                outline: 'none',
+                boxShadow: 'none',
+                display: 'block',
+                clipPath: 'inset(1px 1px)',
+              }}
+            >
+              <source src="assets/langdorm_animated.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         }
         description="Living Learning Community @ Duke University" // Description text
