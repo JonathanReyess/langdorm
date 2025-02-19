@@ -1,5 +1,5 @@
+import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
-import { NextApiRequest, NextApiResponse } from 'next';
 
 // Create a transporter object using your email service
 const transporter = nodemailer.createTransport({
@@ -13,17 +13,23 @@ const transporter = nodemailer.createTransport({
 // Function to verify reCAPTCHA token
 const verifyRecaptcha = async (token: string) => {
   const secretKey = process.env.RECAPTCHA_SECRET_KEY;
-  const response = await fetch(`https://www.google.com/recaptcha/api/siteverify`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: `secret=${secretKey}&response=${token}`,
-  });
+  const response = await fetch(
+    `https://www.google.com/recaptcha/api/siteverify`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: `secret=${secretKey}&response=${token}`,
+    },
+  );
   const data = await response.json();
   return data.success;
 };
 
 // Define the API handler
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse,
+) {
   if (req.method === 'POST') {
     const { name, email, message, recaptchaToken } = req.body;
 
@@ -48,10 +54,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       await transporter.sendMail(mailOptions);
       return res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error('Error sending email:', error); // eslint-disable-line no-console
       return res.status(500).json({ message: 'Error sending email' });
     }
   } else {
-    res.status(405).json({ message: 'Method Not Allowed' });
+    return res.status(405).json({ message: 'Method Not Allowed' });
   }
 }
