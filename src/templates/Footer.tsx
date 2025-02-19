@@ -16,7 +16,11 @@ const Footer = () => (
       {/* Rendering a CenteredFooter component with logo, icon list, and navigation links */}
       <CenteredFooter
         id="dashboard"
-        logo={<Logo />} // Logo component as the logo for the footer
+        logo={
+          <div className="ml-[-20px]">
+            <Logo />
+          </div>
+        }
         iconList={
           // Icon list containing social media icons, each wrapped in a Link component
           <>
@@ -41,9 +45,17 @@ const Footer = () => (
         }
       >
         {/* Navigation links for the footer, each wrapped in a list item */}
-        <li>
-          <Link href="/">Home</Link> {/* Link to the home page */}
-        </li>
+        <ul className="flex space-x-4">
+          {' '}
+          {/* Flexbox for horizontal links with space */}
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/Contact">Contact</Link>
+          </li>
+        </ul>
+
         {/* Additional navigation links rendered similarly */}
       </CenteredFooter>
     </Section>

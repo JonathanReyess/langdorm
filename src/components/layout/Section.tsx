@@ -6,6 +6,7 @@ type ISectionProps = {
   description?: string; // An optional string representing the description of the section
   yPadding?: string; // An optional string representing the vertical padding of the section
   children: ReactNode; // ReactNode type represents the type of children elements that can be rendered within a React component
+  className?: string; // Added className as an optional property
 };
 
 // Defining the Section component
@@ -14,7 +15,7 @@ const Section = (props: ISectionProps) => (
     id={props.id} // Apply the id prop here
     className={`mx-auto max-w-screen-lg px-0 ${
       props.yPadding ? props.yPadding : 'py-16' // Using conditional operator to set default vertical padding
-    }`}
+    } ${props.className || ''}`} // Apply className prop here
   >
     {(props.title || props.description) && (
       <div className="mb-12 text-center">

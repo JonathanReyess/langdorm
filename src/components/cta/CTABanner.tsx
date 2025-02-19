@@ -9,7 +9,7 @@ type ICTABannerProps = {
 
 // CTABanner component renders a call-to-action banner with title, subtitle, and a button
 const CTABanner = (props: ICTABannerProps) => (
-  <div className="flex flex-col rounded-md bg-transparent p-4 text-center sm:flex-row sm:items-center sm:justify-between sm:p-8 sm:text-left">
+  <div className="flex flex-col rounded-md bg-transparent text-center sm:flex-row sm:items-center sm:justify-between sm:p-8 sm:pt-4 sm:text-left">
     {/* Div for the title and subtitle section */}
     <div className="flex flex-col items-center sm:items-start">
       <div className="break-words text-xl font-bold text-primary-500 sm:text-2xl">
@@ -21,7 +21,7 @@ const CTABanner = (props: ICTABannerProps) => (
     </div>
 
     {/* Div for the button section */}
-    <div className="mt-4 sm:ml-4 sm:mt-0">
+    <div className="mt-0 sm:ml-4 sm:mt-0">
       {/* {props.button} Rendering the button passed as props */}
     </div>
   </div>
