@@ -52,7 +52,7 @@ const Footer = () => (
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/Contact">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
 
